@@ -1,6 +1,7 @@
 # Case study: Pruning an Overgrown Website
 
 ## About this project
+
 This study is based on observations from a non-profit site found "in the wild". Identifying details have been changed, but the lessons learned from this project should be widely applicable.
 
 Violet's Houseplant Rescue is a local non-profit organization that rehabilitates and rehomes unwanted or neglected plants. In the last n years, it has grown from a one-person backyard venture into an award-winning garden.  Its website, violethouseplants.com, has also grown over time; pieces have been added bit by bit, but nothing has been removed or reorganized. The current front page is a disorganized collection of articles, action buttons, sponsor links, and images. How can we make the page more effective?
@@ -39,23 +40,25 @@ The site is unresponsive to device size, so the majority of this review was at 1
 ## Analysis
 On the plus side, the site branding, contact information, some donation/adoption-related content, and some current events are above the fold. Accompanying photos are generally clear and attractive. However, the index page is more than three screens long, and the content hierarchy is unclear, meaning that much of the content is probably going unread.
 
+<<<<<<< HEAD
 The relevance of the written content is not always clear. Some items, such as upcoming events, are clearly dated and placed near the top; other content blocks are undated, and it's not immediately obvious whether it's old news or simply reference material. Separating reference articles from news or updates (and moving or removing "stale" content) would improve the page flow considerably.
 
 The most confusing part of the page is the sidebar, which contains a mix of contact information, social media links, donations, and other advertisements with no clear pattern. As with the written content, the sheer quantity of sidebar links is probably reducing their effectiveness.
 
 ## Recommendations
-ASK the client and clarify their goal.
-* "What is the #1 reason for someone to visit your site?"
-* "Fill in the blank: when a visitor comes to your site, you want them to _____."
-Prioritize around that one reason.
+
+ASK the client to clarify their goal.
+"What is the #1 reason for someone to visit your site?"
+"Fill in the blank: when a visitor comes to your site, you want them to _____."
+Prioritize around that reason.
 
 Simplify, simplify. 
-* Most of the articles fit neatly into one of the navigation sections, so prioritize which items are critical for the front page, and move or discard the rest.
-* Gather data on which donation options are most frequently utilized, and move or drop the rest.
+* Most of the content fits neatly into one of the navigation sections, so prioritize which items are critical for the front page, and "re-file" or discard the rest.
+* Gather data on which donation options are the most utilized, and move or drop the rest.
 * Review social media presence and newsletters; assess which ones can be maintained with current resources. Better to have a couple of high-quality outlets than several stale ones.
 * Consolidate the merchandise to its own page.
-* Date all new articles. Excerpt and link if adding longer articles to front page.
-* Or consider using a CMS to handle all this.
+* Date all new articles.
+>>>>>>> origin/master
 
 ## Plan of Action
 (Since I'm unable to discuss this directly with the client, I'll have to imagine some answers.)
@@ -107,3 +110,4 @@ A mobile-first redesign is in progress.
  * Changing or upgrading hosting will be a pain point.
  * Learning PHP/Laravel from square one is beyond the scope of this project.
  * Consider Wordpress if client wants a blog-heavy site.
+
