@@ -82,7 +82,7 @@ One of the ads will be removed; the others are required due to active sponsorshi
 The footer is currently barely used; we can add contact info, icons, and credits there.
 
 The preceding adjustments resulted in an intermediate content map:
-[(Chart 2)]("after-box-chart.png")
+[(Chart 2)](after-box-chart.png)
 
 A mobile-first redesign is in progress. 
 
