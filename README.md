@@ -17,30 +17,29 @@ The site is unresponsive to device size, so the majority of this review was at 1
 * Sidebar - all the things
 * Footer - unused
 * News feeds
- * Outdated blog roll
- * Outdated newsletter archive
+  * Outdated blog roll
+  * Outdated newsletter archive
 * Social links
- * Email list opt-in
- * Adoption network plugin
- * Facebook plugin
+  * Email list opt-in
+  * Adoption network plugin
+  * Facebook plugin
 * Donation buttons
- * Paypal
- * Retail wish list
- * Alt payment method A
- * Alt payment method B
+  * Paypal
+  * Retail wish list
+  * Alt payment method A
+  * Alt payment method B
 * Merchandise
- * Item A
- * Item B
- * Item C
+  * Item A
+  * Item B
+  * Item C
 * Ads
- * Ad A
- * Ad B
- * Ad C
+  * Ad A
+  * Ad B
+  * Ad C
 
 ## Analysis
 On the plus side, the site branding, contact information, some donation/adoption-related content, and some current events are above the fold. Accompanying photos are generally clear and attractive. However, the index page is more than three screens long, and the content hierarchy is unclear, meaning that much of the content is probably going unread.
 
-<<<<<<< HEAD
 The relevance of the written content is not always clear. Some items, such as upcoming events, are clearly dated and placed near the top; other content blocks are undated, and it's not immediately obvious whether it's old news or simply reference material. Separating reference articles from news or updates (and moving or removing "stale" content) would improve the page flow considerably.
 
 The most confusing part of the page is the sidebar, which contains a mix of contact information, social media links, donations, and other advertisements with no clear pattern. As with the written content, the sheer quantity of sidebar links is probably reducing their effectiveness.
@@ -48,8 +47,11 @@ The most confusing part of the page is the sidebar, which contains a mix of cont
 ## Recommendations
 
 ASK the client to clarify their goal.
+
 "What is the #1 reason for someone to visit your site?"
-"Fill in the blank: when a visitor comes to your site, you want them to _____."
+
+"Fill in the blank: when a visitor comes to your site, you want them to ____."
+
 Prioritize around that reason.
 
 Simplify, simplify. 
@@ -58,13 +60,15 @@ Simplify, simplify.
 * Review social media presence and newsletters; assess which ones can be maintained with current resources. Better to have a couple of high-quality outlets than several stale ones.
 * Consolidate the merchandise to its own page.
 * Date all new articles.
->>>>>>> origin/master
+* ...Or use a CMS and skip all the document management stuff.
 
 ## Plan of Action
 (Since I'm unable to discuss this directly with the client, I'll have to imagine some answers.)
 
 "The #1 reason for the site is... to arrange and support successful plant adoptions."
+
 "Before adopting, a visitor should search for adoptable plants, find one, and be able to contact us."
+
 "After adopting, a visitor should be able to find solutions to any problems, or contact us if they need additional assistance."
 
 I initially wanted to remove the adoption network link because it looks out of date. However, further research revealed that it automates the creation of adoptable plant profiles, and is thus a great time saver for the client. It stays, though we might move it to a dedicated page.
@@ -87,14 +91,14 @@ A mobile-first redesign is in progress.
 * Nav bar - Adopt, Donate, Volunteer, News, Resources, Success, Contact
 * Sidebar - ?
 * News feeds
- * Use Facebook plugin in lieu of news roll?
+  * Use Facebook plugin in lieu of news roll?
 * Social links
- * Email list opt-in
- * Adoption network plugin - pointing to self
+  * Email list opt-in
+  * Adoption network plugin - pointing to self
 * Donation buttons
- * Paypal
- * Retail wish list
- * Ad B
+  * Paypal
+  * Retail wish list
+  * Ad B
 * Footer - repeat contact info, social links
 
 ## Tools and Technologies
@@ -107,7 +111,6 @@ A mobile-first redesign is in progress.
 * Plant pics from Flickr, with CC attribution
 
 * Issue: the client uses a PHP-based web host with no Node support.
- * Changing or upgrading hosting will be a pain point.
- * Learning PHP/Laravel from square one is beyond the scope of this project.
- * Consider Wordpress if client wants a blog-heavy site.
-
+  * Changing or upgrading hosting will be a pain point.
+  * Learning PHP/Laravel from square one is beyond the scope of this project.
+  * Consider Wordpress if client wants a blog-heavy site.
