@@ -9,7 +9,7 @@ Violet's Houseplant Rescue is a local non-profit organization that rehabilitates
 ## Site Review
 
 The site is unresponsive to device size, so the majority of this review was at 1920x1080 or 1200x800 resolution. To begin with, I took screenshots of the front page and made a rough content map.
-[(Chart 1)](before-box-chart.png)
+[(Chart 1)](/blueprints/before-box-chart.png)
 
 ### Inventory
 * Header - name, logo, other graphics, contact info
@@ -47,11 +47,8 @@ The most confusing part of the page is the sidebar, which contains a mix of cont
 ## Recommendations
 
 ASK the client to clarify their goal.
-
 "What is the #1 reason for someone to visit your site?"
-
 "Fill in the blank: when a visitor comes to your site, you want them to ____."
-
 Prioritize around that reason.
 
 Simplify, simplify. 
@@ -82,7 +79,7 @@ One of the ads will be removed; the others are required due to active sponsorshi
 The footer is currently barely used; we can add contact info, icons, and credits there.
 
 The preceding adjustments resulted in an intermediate content map:
-[(Chart 2)](after-box-chart.png)
+[(Chart 2)](/blueprints/after-box-chart.png)
 
 A mobile-first redesign is in progress. 
 

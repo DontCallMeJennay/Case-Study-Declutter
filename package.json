@@ -1,0 +1,27 @@
+{
+  "name": "case-study-declutter",
+  "version": "1.0.0",
+  "description": "Website remake",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DontCallMeJennay/Case-Study-Declutter.git"
+  },
+  "author": "Jenni Corbus",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/DontCallMeJennay/Case-Study-Declutter/issues"
+  },
+  "homepage": "https://github.com/DontCallMeJennay/Case-Study-Declutter#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.1",
+    "gulp-imagemin": "^3.3.0",
+    "gulp-ruby-sass": "^2.1.1",
+    "gulp-uglify": "^3.0.0",
+    "pug-cli": "^1.0.0-alpha6"
+  }
+}
