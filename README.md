@@ -1,4 +1,12 @@
 # Case study: Pruning an Overgrown Website
+1. About
+2. Site review
+3. Site inventory
+4. Analysis
+5. Recommendations
+6. Plan of action
+7. Tools and technologies
+8. TBC
 
 ## About this project
 
