@@ -1,27 +1,29 @@
 doctype html
 html(lang='en')
-head
-	meta(charset="UTF-8")
-	title= title
-	meta(name="description" content="Website Rebuild")
-	meta(name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no")
-	link(rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous")
-	link(rel="stylesheet" href="../../build/stylesheets/style.css")
-body
-	include header
-	include nav	
+	head
+		meta(charset="UTF-8")
+		title= title
+		meta(name="description" content="Website Rebuild")
+		meta(name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no")
+		link(rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous")
+		link(rel="stylesheet" href="../../build/stylesheets/style.css")
 
-	block adopt
-	block contact
-	block donate
-	block news
-	block resources
-	block success
-	block volunteer
+	body
+		include header
 
-	include footer
+		main
+			block adopt
+			block contact
+			block donate
+			block index
+			block news
+			block resources
+			block success
+			block volunteer
 
-	script(src="https://unpkg.com/vue")
-	script(src='../../build/scripts/main.js')
-	script(src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous")    
-	script(src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous")
+		include footer
+
+		script(src="https://unpkg.com/vue")
+		script(src='../../build/scripts/main.js')
+		script(src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous")    
+		script(src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous")
