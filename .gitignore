@@ -50,3 +50,4 @@ node_modules/*
 *.scssc
 *.jpg
 *.psd
+npm-debug.log
