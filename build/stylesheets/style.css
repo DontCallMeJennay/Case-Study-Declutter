@@ -1,7 +1,9 @@
 @import url("https://fonts.googleapis.com/css?family=Cherry+Swash|Sahitya");
+/*
 * {
-  border: 1px solid blue; }
-
+    border: 1px solid blue;
+}
+*/
 a {
   color: white; }
 
@@ -59,13 +61,12 @@ nav {
   display: flex;
   font-weight: bold;
   justify-content: center;
-  min-height: 30vh;
+  min-height: 40vh;
   text-align: center;
   width: 100%; }
 
 .profile {
   display: flex;
-  flex: auto;
   flex-flow: row wrap;
   margin: 0 auto; }
   .profile div {
