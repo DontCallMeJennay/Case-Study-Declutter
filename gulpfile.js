@@ -7,20 +7,20 @@ var gulp = require('gulp'),
 gulp.task('imagemin', () => {
     gulp.src('src/images/**/*')
         .pipe(image())
-        .pipe(gulp.dest('/build/images'))
+        .pipe(gulp.dest('build/images'))
 });
 
 gulp.task('sass', () => {
     sass('src/stylesheets/style.scss')
         .on('error', sass.logError)
-        .pipe(gulp.dest('/build/stylesheets/style.css'));
+        .pipe(gulp.dest('build/stylesheets/'));
 });
 
 gulp.task('build-js', () => {
 	return gulp.src('src/scripts/**/*.js')
 		.pipe(concat('main.js'))
 		.pipe(ugly())
-		.pipe(gulp.dest('/build/scripts'));
+		.pipe(gulp.dest('build/scripts'));
 });
 
 gulp.watch('src/stylesheets/style.scss', ['sass']);

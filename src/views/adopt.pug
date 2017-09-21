@@ -1,4 +1,11 @@
 extends layout
 
 block adopt
-	h2 So you wanna adopt a plant.
+	h2 So you wanna adopt a plant...
+
+	div#vue-app
+		template(v-for='plant in plants')
+			div.profile
+				img.thumbnail(v-bind:src='plant.pic')
+				p {{plant.name}}
+				p {{plant.description}}
