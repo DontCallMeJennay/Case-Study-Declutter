@@ -12,7 +12,7 @@
 
 This study is based on observations from a non-profit site found "in the wild". Identifying details have been changed, but the lessons learned from this project should be widely applicable.
 
-Violet's Houseplant Rescue is a local non-profit organization that rehabilitates and rehomes unwanted or neglected plants. In the last n years, it has grown from a one-person backyard venture into an award-winning garden.  Its website, violethouseplants.com, has also grown over time; pieces have been added bit by bit, but nothing has been removed or reorganized. The current front page is a disorganized collection of articles, action buttons, sponsor links, and images. How can we make the page more effective?
+Violet's Houseplant Rescue is a local non-profit organization that rehabilitates and rehomes unwanted or neglected plants. In the last n years, it has grown from a one-person backyard venture into an award-winning garden.  Its website, violethouseplants.com, has also grown over time; pieces have been added bit by bit, but nothing has been removed or reorganized. The current front page is a disorganized collection of articles, action buttons, sponsor links, and images. How can we make the site more effective?
 
 ## Site Review
 
@@ -54,7 +54,7 @@ The most confusing part of the page is the sidebar, which contains a mix of cont
 
 ## Recommendations
 
-Clarify the most important goal of the page with the client.
+Clarify the most important goal of the site with the client.
 
 Simplify, simplify. 
 * Prioritize which items are front-page info and move or discard the rest.
@@ -66,13 +66,14 @@ Simplify, simplify.
 ## Plan of Action
 For purposes of this project I will assume the following priorities:
 
-"The #1 reason for the site is... to arrange and support successful plant adoptions."
-"Before adopting, a visitor should search for adoptable plants, find one, and be able to contact us."
-"After adopting, a visitor should be able to find solutions to any problems, or contact us if they need additional assistance."
+"The #1 reason for the site is... to arrange and support successful plant adoptions." 
+"Before adopting, a visitor should search for adoptable plants, find one, and be able to contact us." 
+"After adopting, a visitor should be able to find solutions to any problems, or contact us if they need additional assistance." 
 
-The adoption network link is actually part of a system that creates and disseminates ads for each pet. Contrary to my initial impulse, it stays. (I will use a Vue page to emulate this.)
+The focus will be on the front page for now, though there is plenty of streamlining that could be done on the secondary pages.
+The adoption network link is actually part of a system that creates and disseminates ads for each plant. Contrary to my initial impulse, it stays. (I will use a Vue page to emulate this.)
 
-Investigate whether a Facebook plugin will be adequate for frequent updates.
+Investigate whether a Facebook plugin will be adequate for event updates.
 
 Remove unused news features and outdated ads.
 
@@ -105,7 +106,6 @@ A mobile-first redesign is in progress.
 * Paypal plugin
 * Plant pics from Flickr, with CC attribution
 * Issue: the client uses a PHP-based web host with little/no Node support.
-  * Changing or upgrading hosting will be a pain point.
-  * Learning PHP/Laravel from square one is beyond the scope of this project.
-  * Consider Wordpress if client wants a blog-heavy site. Otherwise, static html and Vue.
+  * Learning PHP/Laravel (?) from square one is a bit out of scope for this project. 
+  * Static pages and Vue for now; keep the templates for later porting to a dynamic setup.
 * Not sure if database or authentication is required.
