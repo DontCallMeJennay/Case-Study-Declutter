@@ -4,16 +4,6 @@
     border: 1px solid blue;
 }
 */
-a {
-  color: white; }
-
-a:active,
-a:hover {
-  color: #758F35; }
-
-a:visited {
-  color: #95AF56; }
-
 html,
 body {
   color: #333;
@@ -39,6 +29,8 @@ footer {
   background-color: #374B05;
   color: white;
   text-align: center; }
+  footer p {
+    margin: 0; }
 
 h1,
 h2,
@@ -50,7 +42,15 @@ nav {
   background-color: #020;
   display: flex;
   flex-flow: row wrap;
-  justify-content: space-around; }
+  justify-content: space-around;
+  padding: 1em; }
+  nav a {
+    color: white; }
+  nav a:active,
+  nav a:hover {
+    color: #758F35; }
+  nav a:visited {
+    color: #95AF56; }
 
 .jumbotron {
   align-items: center;
@@ -78,3 +78,24 @@ nav {
   border: 2px double #95AF56;
   height: 240px;
   width: 240px; }
+
+.sponsors {
+  display: flex;
+  flex: 0 0 auto;
+  flex-flow: row;
+  justify-content: space-around;
+  margin: 0 auto;
+  width: 80%; }
+  .sponsors div {
+    border: 1px solid green;
+    width: 100%; }
+
+.triplet {
+  text-align: justify;
+  width: 30%; }
+
+.flex-wrapper {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  margin: 2%; }
