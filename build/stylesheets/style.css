@@ -11,6 +11,13 @@ body {
   font-size: 1.1rem;
   min-height: 100vh; }
 
+a {
+  color: #64417D; }
+
+a:active,
+a:hover {
+  color: #B35861; }
+
 body {
   display: flex;
   flex-direction: column;
@@ -21,8 +28,8 @@ footer {
   flex: 0 0 auto; }
 
 header {
-  border-bottom: 3px double #58711B;
-  margin-bottom: 1%; }
+  background-color: #b9d379;
+  border-bottom: 3px double #58711B; }
   header div {
     align-items: center; }
 
@@ -30,6 +37,8 @@ main {
   display: flex;
   flex-direction: column;
   flex: 1 0 auto; }
+  main .indent {
+    margin: 2%; }
 
 footer {
   background-color: #374B05;
@@ -38,6 +47,18 @@ footer {
   text-align: center; }
   footer p {
     margin: 0; }
+  footer a {
+    color: #ADA; }
+  footer div {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 1em; }
+    footer div div {
+      display: block;
+      padding: 0.5em; }
+  footer i {
+    margin: auto 0.5em; }
 
 h1,
 h2,
@@ -49,13 +70,16 @@ nav {
   display: flex;
   flex-flow: row wrap;
   font-family: 'Cherry Swash', 'Sahitya', serif;
-  justify-content: space-around;
-  padding: 0.5em; }
+  justify-content: space-around; }
   nav a {
-    color: white; }
+    color: white;
+    padding: 0.5em; }
   nav a:active,
   nav a:hover {
-    color: #758F35; }
+    background-color: #93363F;
+    background: linear-gradient(to bottom, #846799, #020, #846799);
+    color: #758F35;
+    text-decoration: none; }
   nav a:visited {
     color: #95AF56; }
 
@@ -70,7 +94,7 @@ nav {
   justify-content: center;
   min-height: 40vh;
   text-align: center;
-  width: 100vw; }
+  width: 100%; }
 
 .profile {
   display: flex;
@@ -107,7 +131,8 @@ nav {
 .flex-wrapper {
   display: flex;
   flex-flow: row wrap;
-  justify-content: space-between; }
+  justify-content: space-between;
+  margin: auto 2%; }
 
 .banner {
   max-height: 10vh;
@@ -127,3 +152,6 @@ nav {
   color: white;
   border-color: white;
   text-decoration: none; }
+
+.block {
+  margin: 0; }

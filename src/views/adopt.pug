@@ -1,12 +1,14 @@
 extends layout
 
 block adopt
-	h2 Thank you for considering adoption!
-	h3 Available plants
+	div.indent
+		h2 Thank you for considering adoption!
+		hr
+		h3 Available plants
 
-	div#vue-app.profile
-		template(v-for='plant in plants')
-			div
-				img.thumbnail(v-bind:src='plant.pic')
-				p.bold {{plant.name}}
-				p {{plant.description}}
+		div#vue-app.profile
+			template(v-for='plant in plants')
+				div
+					img.thumbnail(v-bind:src='plant.pic')
+					p.bold {{plant.name}}
+					p {{plant.description}}

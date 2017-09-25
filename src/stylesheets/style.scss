@@ -18,6 +18,9 @@ $color-secondary-2-2: #64417D;
 $color-secondary-2-3: #381750;
 $color-secondary-2-4: #220735;
 
+
+
+
 /*
 * {
     border: 1px solid blue;
@@ -32,6 +35,19 @@ body {
     min-height: 100vh;
 }
 
+a {
+    color: $color-secondary-2-2;
+}
+
+a:active,
+a:hover {
+    color: $color-secondary-1-2;
+}
+
+a:visited {
+    $color-secondary-2-4: #220735;
+}
+
 body {
     display: flex;
     flex-direction: column;
@@ -44,8 +60,8 @@ footer {
 }
 
 header {
+    background-color: $color-primary-0 + #444;
     border-bottom: 3px double $color-primary-3;
-    margin-bottom: 1%;
     div {
         align-items: center;
     }
@@ -55,6 +71,9 @@ main {
     display: flex;
     flex-direction: column;
     flex: 1 0 auto;
+    .indent {
+        margin: 2%;
+    }
 }
 
 footer {
@@ -64,6 +83,22 @@ footer {
     text-align: center;
     p {
         margin: 0;
+    }
+    a {
+        color: #ADA;
+    }
+    div {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        padding: 1em;
+        div {
+            display: block;
+            padding: 0.5em;
+        }
+    }
+    i {
+        margin: auto 0.5em;
     }
 }
 
@@ -79,13 +114,16 @@ nav {
     flex-flow: row wrap;
     font-family: 'Cherry Swash', 'Sahitya', serif;
     justify-content: space-around;
-    padding: 0.5em;
     a {
         color: white;
+        padding: 0.5em;
     }
     a:active,
     a:hover {
+        background-color: $color-secondary-1-0;
+        background: linear-gradient(to bottom, $color-secondary-2-1, #020, $color-secondary-2-1);
         color: $color-primary-0;
+        text-decoration: none;
     }
     a:visited {
         color: $color-primary-2;
@@ -103,7 +141,7 @@ nav {
     justify-content: center;
     min-height: 40vh;
     text-align: center;
-    width: 100vw;
+    width: 100%;
 }
 
 .profile {
@@ -148,6 +186,7 @@ nav {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
+    margin: auto 2%;
 }
 
 .banner {
@@ -170,4 +209,8 @@ nav {
     color: white;
     border-color: white;
     text-decoration: none;
+}
+
+.block {
+    margin: 0;
 }
