@@ -58,7 +58,8 @@ footer {
   background-color: #374B05;
   border-top: 3px solid #020;
   color: white;
-  padding: 0.5em;
+  margin-top: 1%;
+  padding: 1em;
   text-align: center; }
   footer a {
     color: #ADA; }
@@ -76,15 +77,6 @@ footer {
     margin: auto 0.5em; }
   footer p {
     margin: 0; }
-
-iframe {
-  background-color: blue; }
-
-#fb-root {
-  height: 1000px;
-  width: 1000px;
-  background-color: blue;
-  position: relative; }
 
 nav {
   background-color: #020;
@@ -106,16 +98,14 @@ nav {
     color: #95AF56; }
 
 .jumbotron {
-  align-items: center;
   background: url("../images/collage1.jpg");
   background-size: contain;
-  border: transparent;
   color: white;
   display: flex;
-  font-weight: bold;
-  justify-content: center;
+  flex-direction: row;
+  justify-content: space-around;
   min-height: 40vh;
-  text-align: center;
+  text-align: left;
   width: 100%; }
 
 .profile {
@@ -157,6 +147,9 @@ nav {
   background-color: #FEF;
   background: linear-gradient(to top, #FEF, #EFD);
   box-shadow: 1px 1px 2px gray;
+  display: flex;
+  flex-flow: column;
+  justify-content: space-between;
   margin: 1%;
   padding: 0.5em;
   position: relative;
@@ -182,6 +175,7 @@ nav {
   color: white;
   margin: 0.5em;
   padding: 0.5em;
+  text-align: center;
   text-decoration: none; }
   .action a, .banner-border a {
     color: white; }
