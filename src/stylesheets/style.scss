@@ -20,9 +20,6 @@ $color-secondary-2-4: #220735;
 
 
 
-
-
-
 /*
 * {
     border: 1px solid blue;
@@ -47,7 +44,13 @@ a:hover {
 }
 
 a:visited {
-    $color-secondary-2-4: #220735;
+    color: $color-secondary-2-4;
+}
+
+article {
+    p {
+        padding: 0 1em;
+    }
 }
 
 body {
@@ -80,7 +83,6 @@ header {
     div {
         align-items: center;
     }
-
 }
 
 main {
@@ -140,7 +142,7 @@ nav {
     a:active,
     a:hover {
         background-color: $color-secondary-1-0;
-        background: linear-gradient(to bottom, $color-secondary-2-1, #020, $color-secondary-2-1);
+        background: linear-gradient(to bottom, $color-secondary-2-1, #020);
         color: $color-primary-0;
         text-decoration: none;
     }
@@ -155,6 +157,7 @@ nav {
     color: white;
     display: flex;
     flex-direction: row;
+    font-size: 1.2rem;
     justify-content: space-around;
     min-height: 40vh;
     text-align: left;
@@ -187,17 +190,15 @@ nav {
 }
 
 .sponsors {
+    background-color: $color-primary-0;
     display: flex;
     flex: 0 1 auto;
     flex-flow: row;
-    justify-content: space-around;
+    justify-content: center;
     margin: 0 auto;
     width: 100%;
-    div {
-        display: flex;
-        justify-content: center;
-        background-color: $color-primary-0;
-        width: 100%;
+    a {
+        margin: 0 10px;
     }
 }
 
@@ -213,9 +214,6 @@ nav {
     position: relative;
     text-align: justify;
     width: 30%;
-    a {
-
-    }
 }
 
 .flex-wrapper {
@@ -277,4 +275,29 @@ nav {
     border: 2px solid $color-secondary-2-1;
     color: $color-secondary-2-1;
     text-decoration: none;
+}
+
+li>a {
+    color: white;
+}
+
+li>a:visited {
+    color: #999;
+}
+
+.success {
+    @extend .triplet;
+    margin: 5%;
+    width: auto;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.trim {
+    border: 2px double $color-primary-2;
+    max-height: 20vw;
+    margin: 0.75em;
+    max-width: 20vw;
 }

@@ -18,6 +18,12 @@ a:active,
 a:hover {
   color: #B35861; }
 
+a:visited {
+  color: #220735; }
+
+article p {
+  padding: 0 1em; }
+
 body {
   display: flex;
   flex-direction: column;
@@ -91,7 +97,7 @@ nav {
   nav a:active,
   nav a:hover {
     background-color: #93363F;
-    background: linear-gradient(to bottom, #846799, #020, #846799);
+    background: linear-gradient(to bottom, #846799, #020);
     color: #758F35;
     text-decoration: none; }
   nav a:visited {
@@ -103,6 +109,7 @@ nav {
   color: white;
   display: flex;
   flex-direction: row;
+  font-size: 1.2rem;
   justify-content: space-around;
   min-height: 40vh;
   text-align: left;
@@ -131,19 +138,17 @@ nav {
   width: 10vw; }
 
 .sponsors {
+  background-color: #758F35;
   display: flex;
   flex: 0 1 auto;
   flex-flow: row;
-  justify-content: space-around;
+  justify-content: center;
   margin: 0 auto;
   width: 100%; }
-  .sponsors div {
-    display: flex;
-    justify-content: center;
-    background-color: #758F35;
-    width: 100%; }
+  .sponsors a {
+    margin: 0 10px; }
 
-.triplet {
+.triplet, .success {
   background-color: #FEF;
   background: linear-gradient(to top, #FEF, #EFD);
   box-shadow: 1px 1px 2px gray;
@@ -208,3 +213,22 @@ nav {
   border: 2px solid #846799;
   color: #846799;
   text-decoration: none; }
+
+li > a {
+  color: white; }
+
+li > a:visited {
+  color: #999; }
+
+.success {
+  margin: 5%;
+  width: auto; }
+
+.bold {
+  font-weight: bold; }
+
+.trim {
+  border: 2px double #95AF56;
+  max-height: 20vw;
+  margin: 0.75em;
+  max-width: 20vw; }
