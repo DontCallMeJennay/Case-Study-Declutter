@@ -24,6 +24,7 @@ gulp.task('build-js', () => {
 });
 
 gulp.watch('src/stylesheets/style.scss', ['sass']);
+gulp.watch('src/images/*', ['imagemin']);
 
 
 gulp.task('default', ['sass', 'imagemin', 'build-js']);

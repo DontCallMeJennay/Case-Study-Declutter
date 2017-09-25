@@ -20,6 +20,12 @@ header,
 footer {
   flex: 0 0 auto; }
 
+header {
+  border-bottom: 3px double #58711B;
+  margin-bottom: 1%; }
+  header div {
+    align-items: center; }
+
 main {
   display: flex;
   flex-direction: column;
@@ -28,22 +34,23 @@ main {
 footer {
   background-color: #374B05;
   color: white;
+  padding: 0.5em;
   text-align: center; }
   footer p {
     margin: 0; }
 
 h1,
 h2,
-h3,
-nav {
+h3 {
   font-family: 'Cherry Swash', 'Sahitya', serif; }
 
 nav {
   background-color: #020;
   display: flex;
   flex-flow: row wrap;
+  font-family: 'Cherry Swash', 'Sahitya', serif;
   justify-content: space-around;
-  padding: 1em; }
+  padding: 0.5em; }
   nav a {
     color: white; }
   nav a:active,
@@ -63,12 +70,13 @@ nav {
   justify-content: center;
   min-height: 40vh;
   text-align: center;
-  width: 100%; }
+  width: 100vw; }
 
 .profile {
   display: flex;
   flex-flow: row wrap;
-  margin: 0 auto; }
+  margin: 0 auto;
+  max-width: 1200px; }
   .profile div {
     align-content: center;
     margin: 1% auto;
@@ -81,13 +89,15 @@ nav {
 
 .sponsors {
   display: flex;
-  flex: 0 0 auto;
+  flex: 0 1 auto;
   flex-flow: row;
   justify-content: space-around;
   margin: 0 auto;
-  width: 80%; }
+  width: 100%; }
   .sponsors div {
-    border: 1px solid green;
+    display: flex;
+    justify-content: center;
+    background-color: #758F35;
     width: 100%; }
 
 .triplet {
@@ -97,5 +107,23 @@ nav {
 .flex-wrapper {
   display: flex;
   flex-flow: row wrap;
-  justify-content: space-between;
-  margin: 2%; }
+  justify-content: space-between; }
+
+.banner {
+  max-height: 10vh;
+  max-width: 10vw; }
+
+.action {
+  background-color: white;
+  border: 3px solid #B35861;
+  color: #4D050C;
+  margin: 5px;
+  padding: 5px;
+  text-decoration: none; }
+
+.action:hover,
+.action:focus {
+  background-color: #B35861;
+  color: white;
+  border-color: white;
+  text-decoration: none; }
