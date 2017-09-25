@@ -4,32 +4,32 @@ new Vue({
         plants: [{
                 name: "Prayer plant",
                 pic: "../../build/images/plant1.jpg",
-                description: "Take this pretty plant home today!"
+                description: "A hardy, low-light indoor plant. Take this plant home today!"
             },
             {
                 name: "Unknown, variegated",
                 pic: "../../build/images/plant2.jpg",
-                description: "Take this pretty plant home today!"
+                description: "An ideal transplant for a sophisticated outdoor garden. Take this plant home today!"
             },
             {
                 name: "Mixed pot",
                 pic: "../../build/images/plant3.jpg",
-                description: "Take this pretty plant home today!"
+                description: "Take this lovely duo home today!"
             },
             {
-                name: "Unknown, purple flowering, outdoor",
+                name: "Unknown, purple flowering",
                 pic: "../../build/images/plant4.jpg",
-                description: "Take this pretty plant home today!"
+                description: "A striking outdoor shrub. Take this plant home today!"
             },
             {
                 name: "Culinary basil",
                 pic: "../../build/images/plant5.jpg",
-                description: "Take this pretty plant home today!"
+                description: "Looks good enough to eat. Take this plant home today!"
             },
             {
-                name: "African violet mix",
+                name: "African violets",
                 pic: "../../build/images/plant6.jpg",
-                description: "Take this pretty plant home today!"
+                description: "Experienced plant-keepers will be rewarded with beautiful blooms. Take this plant home today!"
             }
         ]
     },
