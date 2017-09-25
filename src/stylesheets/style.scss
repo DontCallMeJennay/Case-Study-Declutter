@@ -124,6 +124,17 @@ footer {
     }
 }
 
+iframe {
+    background-color: blue;
+}
+
+#fb-root {
+    height: 1000px;
+    width: 1000px;
+    background-color: blue;
+    position: relative;
+}
+
 nav {
     background-color: #020;
     display: flex;
