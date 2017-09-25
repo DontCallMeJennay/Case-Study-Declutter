@@ -36,29 +36,33 @@ header {
 main {
   display: flex;
   flex-direction: column;
-  flex: 1 0 auto; }
+  flex: 1 0 auto;
+  min-height: 50vh; }
   main .indent {
     margin: 2%; }
 
 footer {
   background-color: #374B05;
+  border-top: 3px solid #020;
   color: white;
   padding: 0.5em;
   text-align: center; }
-  footer p {
-    margin: 0; }
   footer a {
     color: #ADA; }
   footer div {
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    padding: 1em; }
+    justify-content: space-around;
+    padding: 0 1em; }
     footer div div {
       display: block;
-      padding: 0.5em; }
+      padding: 0 0.5em; }
+  footer hr {
+    border-color: #C1D78C; }
   footer i {
     margin: auto 0.5em; }
+  footer p {
+    margin: 0; }
 
 h1,
 h2,
@@ -125,6 +129,8 @@ nav {
     width: 100%; }
 
 .triplet {
+  box-shadow: 1px 1px 2px gray;
+  padding: 5px;
   text-align: justify;
   width: 30%; }
 
@@ -132,7 +138,7 @@ nav {
   display: flex;
   flex-flow: row wrap;
   justify-content: space-between;
-  margin: auto 2%; }
+  margin: 2%; }
 
 .banner {
   max-height: 10vh;
