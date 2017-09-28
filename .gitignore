@@ -46,9 +46,9 @@ Network Trash Folder
 Temporary Items
 .apdisk
 
+src/images/*
 node_modules/*
 *.scssc
-*.jpg
 *.psd
 npm-debug.log
 credits.txt
