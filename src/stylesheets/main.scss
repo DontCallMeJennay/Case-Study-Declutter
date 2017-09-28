@@ -1,0 +1,136 @@
+html,
+body {
+    color: #333;
+    font-family: 'Sahitya', sans-serif;
+    font-size: 1.1rem;
+    min-height: 100vh;
+}
+
+a {
+    color: #020;
+    text-decoration: none;
+}
+
+a:active,
+a:hover {
+    color: $color-primary-0;
+}
+
+a:visited {
+    color: gray;
+}
+
+article {
+    p {
+        padding: 0 1em;
+    }
+}
+
+article:after {
+    clear: left;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Cherry Swash', 'Sahitya', serif;
+}
+
+hr {
+    border-color: $color-primary-2;
+}
+
+header,
+footer {
+    flex: 0 0 auto;
+}
+
+header {
+    background-color: $color-primary-0 + #444;
+    border-bottom: 3px double $color-primary-3;
+    div {
+        align-items: center;
+    }
+    i {
+        margin: 0 1em;
+    }
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    flex: 1 0 auto;
+    justify-content: space-between;
+    min-height: 50vh;
+    .indent {
+        margin: 2%;
+        margin-bottom: 5%;
+    }
+}
+
+li {
+    list-style: none;
+}
+
+footer {
+    background-color: $color-primary-4;
+    border-top: 3px solid #020;
+    color: white;
+    margin-top: 1%;
+    padding: 1em;
+    text-align: center;
+    a {
+        color: #ADA;
+    }
+    div {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        padding: 0 1em;
+        div {
+            display: block;
+            padding: 0 0.5em;
+        }
+    }
+    hr {
+        border-color: $color-primary-1;
+    }
+    i {
+        margin: auto 0.5em;
+    }
+    p {
+        margin: 0;
+    }
+}
+
+nav {
+    background-color: #020;
+    display: flex;
+    flex-flow: row wrap;
+    font-family: 'Cherry Swash', 'Sahitya', serif;
+    font-size: 1.25rem;
+    justify-content: space-around;
+    a {
+        color: white;
+        padding: 0.5em;
+    }
+    a:active,
+    a:hover {
+        background-color: $color-secondary-1-0;
+        background: linear-gradient(to bottom, $color-secondary-2-1, #020);
+        color: $color-primary-0;
+        text-decoration: none;
+    }
+    a:visited {
+        color: $color-primary-2;
+    }
+}

@@ -23,7 +23,7 @@ gulp.task('build-js', () => {
 		.pipe(gulp.dest('build/scripts'));
 });
 
-gulp.watch('src/stylesheets/style.scss', ['sass']);
+gulp.watch('src/stylesheets/*', ['sass']);
 gulp.watch('src/images/*', ['imagemin']);
 gulp.watch('src/scripts/**/*', ['build-js'])
 

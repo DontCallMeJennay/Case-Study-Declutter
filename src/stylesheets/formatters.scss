@@ -1,0 +1,57 @@
+.action {
+    background-color: $color-secondary-2-1;
+    border: 2px solid white;
+    border-radius: 0.5em;
+    color: white;
+    margin: 0.5em;
+    padding: 0.5em;
+    text-align: center;
+    text-decoration: none;
+    a {
+        color: white;
+    }
+}
+
+.action:hover,
+.action:focus {
+    background-color: white;
+    border: 2px solid $color-secondary-2-1;
+    color: $color-secondary-2-1;
+    text-decoration: none;
+    a {
+        color: $color-secondary-2-1;
+        text-decoration: none;
+    }
+}
+
+.bold {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.event img {
+    max-height: 20vh;
+    max-width: 20vh;
+    padding: 0.5em;
+}
+
+.nodots li {
+    list-style: none;
+    a {
+        color: #020;
+    }
+    a:hover,
+    a:focus {
+        color: $color-primary-3;
+    }
+    a:visited {
+        color: #686;
+    }
+}
+
+.trim {
+    border: 2px double $color-primary-2;
+    max-height: 20vw;
+    margin: 0.75em;
+    max-width: 20vw;
+}

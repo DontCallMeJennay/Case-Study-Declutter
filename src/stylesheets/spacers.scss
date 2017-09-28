@@ -1,0 +1,28 @@
+.block {
+    margin: 0;
+}
+
+.center {
+    display: block;
+    text-align: center;
+}
+
+.float {
+    float: left;
+}
+
+.flex-wrapper {
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+    margin: 2%;
+}
+
+.indent {
+    margin: 2%;
+    margin-bottom: 5%;
+}
+
+.space-around {
+    justify-content: space-around;
+}

@@ -1,0 +1,21 @@
+.banner {
+    margin: 0.5em;
+    max-height: 10vh;
+    max-width: 10vw;
+    text-align: center;
+}
+
+.banner-border {
+    @extend .action;
+    background-color: white;
+    border: 2px solid $color-secondary-2-1;
+    color: $color-secondary-2-1;
+    text-decoration: none;
+}
+
+.thumbnail {
+    border: 2px double $color-primary-2;
+    height: 10vw;
+    margin: 0.75em;
+    width: 10vw;
+}
