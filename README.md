@@ -6,7 +6,8 @@
 5. Recommendations
 6. Plan of action
 7. Tools and technologies
-8. TBC
+8. Process
+9. Next steps
 
 ## About this project
 
@@ -82,7 +83,6 @@ The footer is currently barely used; we can add contact info, icons, and credits
 The preceding adjustments resulted in an intermediate content map:
 [(Chart 2)](/blueprints/after-box-chart.png)
 
-A mobile-first redesign is in progress. 
 
 ### Updated inventory
 * Header - name, logo, ~~other graphics~~, contact info
@@ -101,11 +101,40 @@ A mobile-first redesign is in progress.
 ## Tools and Technologies
 * Pug CLI for templating and generating static HTML files.
 * ~~Debate: Bootstrap 4 for no-worry responsiveness, or~~ hand-coded SCSS for customizability, for now.
-* Vue for repeating components, e.g., adoption profiles. jQuery for effects.
+* Vue for ~~repeating components, e.g., adoption profiles.~~ Might as well make the whole thing a Vue.
+* jQuery for effects.
 * Facebook plugin
-* Paypal plugin
+* ~~Paypal plugin
 * Plant pics from Flickr, with CC attribution
 * Issue: the client uses a PHP-based web host with little/no Node support.
   * Learning PHP/Laravel (?) from square one is a bit out of scope for this project. 
   * Static pages and Vue for now; keep the templates for later porting to a dynamic setup.
+  * Update: planning deployment to Azure/Docker with Node/Express.
 * Not sure if database or authentication is required.
+
+## Process
+* Obtained photos from Flickr (Creative Commons licensing) and produced initial graphics and placeholder images in PhotoShop and FireAlpaca
+* Constructed a Pug layout file. Created separate templates for header, footer, index, donations, etc. to Lego together full pages. 
+* Used Gulp script for building Sass files, minifying JS files, and minimizing images; Pug CLI to build HTML files; and Concurrently to run both watch scripts at once.
+* Built out content pages with Flower Ipsum text, CSS Flexboxes for layout, and previously created images.
+
+* Investigated the code made available by the adoption network; built rudimentary Vue page to mimic adoption page. (No functionality yet, obviously.)
+* Investigated vendor buttons and banners. Paypal and Amazon generate their own payment assets for business customers, but I currently have no access to those, so placeholder images were substituted.
+* Continued building content pages and styling as I went. I planned the containers to change from row to column when switching from desktop to mobile.
+* Investigated Facebook plugins, integrated necessary scripts into templates, and reconfigured home page layout to accommodate the plugin.
+* Added a Google Map to the contacts page along with the address and driving directions, because why not.
+
+* Split up the unwieldy SCSS file into several files.
+* Confirmed photo credits and completed Credits page.
+* Wrote and tested media queries for device responsiveness.
+* Uploaded first complete build.
+
+## Next steps (in no particular order)
+* Convert templates to Vue components
+* Combine components into SPA
+* SEO evaluation
+* Accessibility evaluation
+* Investigate email list setup: is backend functionality required?
+* Make pseudo-functional system for comparing plants and putting in an adoption request
+* Add Express and write routes for dynamic site
+* Investigate how to deploy on Azure (Docker?)

@@ -24,7 +24,6 @@
     "gulp-imagemin": "^3.3.0",
     "gulp-ruby-sass": "^2.1.1",
     "gulp-uglify": "^3.0.0",
-    "parallelshell": "^3.0.1",
     "pug-cli": "^1.0.0-alpha6"
   }
 }
