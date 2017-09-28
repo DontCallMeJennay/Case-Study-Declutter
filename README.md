@@ -104,7 +104,7 @@ The preceding adjustments resulted in an intermediate content map:
 * Vue for ~~repeating components, e.g., adoption profiles.~~ Might as well make the whole thing a Vue.
 * jQuery for effects.
 * Facebook plugin
-* ~~Paypal plugin
+* ~~Paypal plugin~~
 * Plant pics from Flickr, with CC attribution
 * Issue: the client uses a PHP-based web host with little/no Node support.
   * Learning PHP/Laravel (?) from square one is a bit out of scope for this project. 
