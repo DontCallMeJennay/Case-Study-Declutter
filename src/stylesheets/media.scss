@@ -1,26 +1,76 @@
 @media screen and (max-width: 800px) {
-	h1 {
-		font-size: 2em;
-	}
-	h2 {
-		font-size: 1.8em;		
-	}
-	h3 {
-		font-size: 1.6em;
-	}
-	h4 {
-		font-size: 1.4em;
-	}
-	nav a {
-		padding: 0 1em;
-	}
-	.flex-wrapper {
-		flex-flow: column;
-		.triplet {
-			width: 80%;
-			.flex-wrapper {
-				flex-flow: row;
-			}
-		}
-	}
+    h1 {
+        font-size: 2em;
+    }
+    h2 {
+        font-size: 1.8em;
+    }
+    h3 {
+        font-size: 1.6em;
+    }
+    h4 {
+        font-size: 1.4em;
+    }
+    nav a {
+        padding: 0 1em;
+    }
+    .flex-wrapper {
+        flex-flow: column;
+        .triplet {
+            width: 80%;
+            .flex-wrapper {
+                flex-flow: row;
+            }
+        }
+    }
+    .profile {
+        flex-flow: column;
+        div {
+            margin: 1% auto;
+            max-width: 80vw;
+            width: 80vw;
+        }
+    }
+    .thumbnail {
+        max-width: 20vh;
+        max-height: 20vh;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    h1 {
+        font-size: 1.5em;
+        text-align: center;
+    }
+    h2 {
+        font-size: 1.25em;
+    }
+    h3 {
+        font-size: 1.1em;
+    }
+    h4 {
+        font-size: 1em;
+    }
+    p,
+    li {
+        font-size: 0.9rem;
+    }
+    nav {
+        justify-content: space-between;
+        a {
+            font-size: 1em;
+        }
+    }
+    .fb,
+    .fb-page {
+        margin: 0 auto;
+        max-width: 400px;
+    }
+    .responsive {
+    	margin: 0.5em;
+    }
+    #map {
+    	height: 75vw;
+    	width: 75vw;
+    }
 }

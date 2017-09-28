@@ -15,16 +15,16 @@
 
 .thumbnail {
     border: 2px double $color-primary-2;
-    height: 10vw;
+    max-height: 10vw;
     margin: 0.75em;
-    width: 10vw;
+    max-width: 10vw;
 }
 
 .responsive {
     margin: 1em;
     margin-top: 0.5em;
-    max-height: 12%;
-    max-height: 12vh;
-    max-width: 12%;
-    max-width: 12vw;
+    max-height: 15%;
+    max-height: 15vh;
+    max-width: 15%;
+    max-width: 15vw;
 }
