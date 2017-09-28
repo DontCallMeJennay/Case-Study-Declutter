@@ -1,0 +1,351 @@
+@import url("https://fonts.googleapis.com/css?family=Cherry+Swash|Sahitya");
+html,
+body {
+  color: #333;
+  font-family: 'Sahitya', sans-serif;
+  font-size: 1.1rem;
+  min-height: 100vh; }
+
+a {
+  color: #020;
+  text-decoration: none; }
+
+a:active,
+a:hover {
+  color: #758F35; }
+
+a:visited {
+  color: gray; }
+
+article p {
+  padding: 0 1em; }
+
+article:after {
+  clear: left; }
+
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100%; }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Cherry Swash', 'Sahitya', serif; }
+
+hr {
+  border-color: #95AF56; }
+
+header,
+footer {
+  flex: 0 0 auto; }
+
+header {
+  background-color: #b9d379;
+  border-bottom: 3px double #58711B; }
+  header div {
+    align-items: center; }
+  header i {
+    margin: 0 1em; }
+
+main {
+  display: flex;
+  flex-direction: column;
+  flex: 1 0 auto;
+  justify-content: space-between;
+  min-height: 50vh; }
+  main .indent {
+    margin: 2%;
+    margin-bottom: 5%; }
+
+li {
+  list-style: none; }
+
+footer {
+  background-color: #374B05;
+  border-top: 3px solid #020;
+  color: white;
+  margin-top: 1%;
+  padding: 1em;
+  text-align: center; }
+  footer a {
+    color: #ADA; }
+  footer div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 0 1em; }
+    footer div div {
+      display: block;
+      padding: 0 0.5em; }
+  footer hr {
+    border-color: #C1D78C; }
+  footer i {
+    margin: auto 0.5em; }
+  footer p {
+    margin: 0; }
+
+nav {
+  background-color: #020;
+  display: flex;
+  flex-flow: row wrap;
+  font-family: 'Cherry Swash', 'Sahitya', serif;
+  font-size: 1.25rem;
+  justify-content: space-around; }
+  nav a {
+    color: white;
+    padding: 0.5em; }
+  nav a:active,
+  nav a:hover {
+    background-color: #93363F;
+    background: linear-gradient(to bottom, #846799, #020);
+    color: #758F35;
+    text-decoration: none; }
+  nav a:visited {
+    color: #95AF56; }
+
+.event {
+  background-color: #EFDFFF;
+  background: linear-gradient(to bottom, white, #EFDFFF);
+  box-shadow: 1px 1px 2px #585; }
+
+.jumbotron {
+  align-items: center;
+  background: url("../images/collage1.jpg");
+  background-size: auto 100%;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  font-size: 1.2rem;
+  justify-content: space-around;
+  min-height: 40vh;
+  text-align: left;
+  width: 100%; }
+
+.profile {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  margin: 0 auto;
+  max-width: 1200px; }
+  .profile div {
+    background-color: #EFE;
+    background: linear-gradient(to bottom, #EFD, #DFC);
+    box-shadow: 1px 1px 2px #95AF56;
+    flex: auto;
+    margin: 1%;
+    max-width: 25vw;
+    padding: 1%;
+    text-align: center; }
+
+.sponsors {
+  background-color: #758F35;
+  display: flex;
+  flex: 0 1 auto;
+  flex-flow: row;
+  justify-content: center;
+  margin: 0 auto;
+  width: 100%; }
+  .sponsors a {
+    margin: 0 10px; }
+
+.triplet, .success {
+  background-color: #FEF;
+  background: linear-gradient(to top, #FEF, #EFD);
+  box-shadow: 1px 1px 2px gray;
+  display: flex;
+  flex-flow: column;
+  justify-content: space-between;
+  margin: 1% auto;
+  padding: 0.5em;
+  position: relative;
+  text-align: justify;
+  width: 30%; }
+
+.success {
+  margin: 5% auto;
+  width: 80%; }
+
+.banner {
+  margin: 0.5em;
+  max-height: 10vh;
+  max-width: 10vw;
+  text-align: center; }
+
+.banner-border {
+  background-color: white;
+  border: 2px solid #846799;
+  color: #846799;
+  text-decoration: none; }
+
+.thumbnail {
+  border: 2px double #95AF56;
+  max-height: 10vw;
+  margin: 0.75em;
+  max-width: 10vw; }
+
+.responsive {
+  margin: 1em;
+  margin-top: 0.5em;
+  max-height: 15%;
+  max-height: 15vh;
+  max-width: 15%;
+  max-width: 15vw; }
+
+.block {
+  margin: 0; }
+
+.center {
+  display: block;
+  text-align: center; }
+
+.center-el {
+  margin: 0 auto; }
+
+.fb-page {
+  margin: 0 auto; }
+
+.float {
+  float: left; }
+
+.flex-wrapper {
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+  margin: 2%; }
+
+.indent {
+  margin: 2%;
+  margin-bottom: 5%; }
+
+.noindent {
+  padding-left: 0; }
+
+.space-around {
+  justify-content: space-around; }
+
+.action, .banner-border {
+  background-color: #846799;
+  border: 2px solid white;
+  border-radius: 0.5em;
+  color: white;
+  margin: 0.5em;
+  padding: 0.5em;
+  text-align: center;
+  text-decoration: none; }
+  .action a, .banner-border a {
+    color: white; }
+
+.action:hover, .banner-border:hover,
+.action:focus,
+.banner-border:focus {
+  background-color: white;
+  border: 2px solid #846799;
+  color: #846799;
+  text-decoration: none; }
+  .action:hover a, .banner-border:hover a,
+  .action:focus a,
+  .banner-border:focus a {
+    color: #846799;
+    text-decoration: none; }
+
+.bold {
+  font-size: 1.2rem;
+  font-weight: bold; }
+
+.nodots li {
+  list-style: none; }
+  .nodots li a {
+    color: #020; }
+  .nodots li a:hover,
+  .nodots li a:focus {
+    color: #58711B; }
+  .nodots li a:visited {
+    color: #686; }
+
+.trim {
+  border: 2px double #95AF56;
+  max-height: 20vw;
+  margin: 0.75em;
+  max-width: 20vw; }
+
+.small {
+  font-size: 0.75rem; }
+
+#map {
+  background-color: #AAA;
+  border: 3px outset #2F667D;
+  height: 30vw;
+  margin: 2%;
+  width: 30vw; }
+
+@media screen and (max-width: 800px) {
+  h1 {
+    font-size: 2em; }
+
+  h2 {
+    font-size: 1.8em; }
+
+  h3 {
+    font-size: 1.6em; }
+
+  h4 {
+    font-size: 1.4em; }
+
+  nav a {
+    padding: 0 1em; }
+
+  .flex-wrapper {
+    flex-flow: column; }
+    .flex-wrapper .triplet, .flex-wrapper .success {
+      width: 80%; }
+      .flex-wrapper .triplet .flex-wrapper, .flex-wrapper .success .flex-wrapper {
+        flex-flow: row; }
+
+  .profile {
+    flex-flow: column; }
+    .profile div {
+      margin: 1% auto;
+      max-width: 80vw;
+      width: 80vw; }
+
+  .thumbnail {
+    max-width: 20vh;
+    max-height: 20vh; } }
+@media screen and (max-width: 450px) {
+  h1 {
+    font-size: 1.5em;
+    text-align: center; }
+
+  h2 {
+    font-size: 1.25em; }
+
+  h3 {
+    font-size: 1.1em; }
+
+  h4 {
+    font-size: 1em; }
+
+  p,
+  li {
+    font-size: 0.9rem; }
+
+  nav {
+    justify-content: space-between; }
+    nav a {
+      font-size: 1em; }
+
+  .fb,
+  .fb-page {
+    margin: 0 auto;
+    max-width: 400px; }
+
+  .responsive {
+    margin: 0.5em; }
+
+  #map {
+    height: 75vw;
+    width: 75vw; } }
