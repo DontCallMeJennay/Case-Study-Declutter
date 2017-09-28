@@ -255,6 +255,9 @@ nav {
   margin: 0.75em;
   max-width: 20vw; }
 
+.small {
+  font-size: 0.75rem; }
+
 #map {
   background-color: #AAA;
   border: 3px outset #2F667D;
