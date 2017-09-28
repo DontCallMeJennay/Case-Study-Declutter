@@ -49,6 +49,8 @@ header {
   border-bottom: 3px double #58711B; }
   header div {
     align-items: center; }
+  header i {
+    margin: 0 1em; }
 
 main {
   display: flex;
@@ -167,7 +169,7 @@ nav {
 
 .flex-wrapper {
   display: flex;
-  flex-flow: row wrap;
+  flex-flow: row;
   justify-content: space-between;
   margin: 2%; }
 
@@ -232,6 +234,7 @@ li > a:visited {
   width: auto; }
 
 .bold {
+  font-size: 1.2rem;
   font-weight: bold; }
 
 .trim {
@@ -247,3 +250,13 @@ article:after {
   max-height: 20vh;
   max-width: 20vh;
   padding: 0.5em; }
+
+.nodots li {
+  list-style: none; }
+
+#map {
+  background-color: #AAA;
+  border: 3px outset #2F667D;
+  height: 30vw;
+  margin: 2%;
+  width: 30vw; }

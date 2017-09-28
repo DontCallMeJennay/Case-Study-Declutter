@@ -1,0 +1,52 @@
+extends layout
+
+block contact
+	div.indent
+		h2 Contact VHR!
+		hr
+		div.indent
+			div.flex-wrapper
+				div
+					h3 Hours and directions
+					ul.nodots 
+						li Wednesday - Saturday 12pm - 6pm
+						li Sunday 12pm - 4pm
+						li Closed Monday & Tuesday
+					hr
+					p.block.bold 123 Anytown Street
+					p.bold Flowerville, WA 98765
+					p 
+						span.bold From I-5 N, 
+						| sea holly grass of parnassus michaelmas daisy. Anemone pasqueflower scots primrose turtle head. Dorset heath spray carnation peony floss flower st john’s wort. Star of bethlehem sunflower daisy safari sunset gorse.
+					p 
+						span.bold From I-5 S, 
+						| peony anemone twinflower. Lupin bee balm, guernsey lily guelder rose, snow berry. Golden rod heather flamingo flower tjenkenrientjee pink heath love lies bleeding chincerinchee. Speedwell, dune helleborine michaelmas daisy primrose columbine wormwood prince of Wales feather.
+				div
+					div#map
+			hr
+			h3 Mailing address
+			ul.nodots
+				li PO BOX 11037
+				li Flowerville, WA 98765
+
+			hr
+			h3 Phone and email
+			ul.nodots
+				li (800) 555-5555
+				li info@vhr.org
+			hr
+	script.
+		var map;
+		var here = { lat: 47.637639, lng: -122.297426 };
+		function initMap() {
+			map = new google.maps.Map(document.getElementById('map'), {
+				center: here,
+				zoom: 15
+			});
+			var marker = new google.maps.Marker({
+				position: here,
+				map: map,
+				title: "Violet's Houseplant Rescue"
+			});
+		}
+	script(src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBUkh7F8wu-7LpWf50SeNhCmLyQv1asw5o&callback=initMap")

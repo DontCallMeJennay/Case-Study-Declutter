@@ -20,6 +20,8 @@ $color-secondary-2-4: #220735;
 
 
 
+
+
 /*
 * {
     border: 1px solid blue;
@@ -83,6 +85,9 @@ header {
     div {
         align-items: center;
     }
+    i {
+        margin: 0 1em;
+    }
 }
 
 main {
@@ -96,10 +101,12 @@ main {
         margin-bottom: 5%;
     }
 }
-    .indent {
-        margin: 2%;
-        margin-bottom: 5%;
-    }
+
+.indent {
+    margin: 2%;
+    margin-bottom: 5%;
+}
+
 footer {
     background-color: $color-primary-4;
     border-top: 3px solid #020;
@@ -221,7 +228,7 @@ nav {
 
 .flex-wrapper {
     display: flex;
-    flex-flow: row wrap;
+    flex-flow: row;
     justify-content: space-between;
     margin: 2%;
 }
@@ -275,6 +282,7 @@ nav {
 .space-around {
     justify-content: space-around;
 }
+
 .banner-border {
     @extend .action;
     background-color: white;
@@ -298,6 +306,7 @@ li>a:visited {
 }
 
 .bold {
+    font-size: 1.2rem;
     font-weight: bold;
 }
 
@@ -316,4 +325,16 @@ article:after {
     max-height: 20vh;
     max-width: 20vh;
     padding: 0.5em;
+}
+
+.nodots li {
+    list-style: none;
+}
+
+#map {
+    background-color: #AAA;
+    border: 3px outset #2F667D;
+    height: 30vw;
+    margin: 2%;
+    width: 30vw;
 }
