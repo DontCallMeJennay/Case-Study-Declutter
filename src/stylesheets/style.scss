@@ -96,7 +96,10 @@ main {
         margin-bottom: 5%;
     }
 }
-
+    .indent {
+        margin: 2%;
+        margin-bottom: 5%;
+    }
 footer {
     background-color: $color-primary-4;
     border-top: 3px solid #020;
@@ -269,6 +272,9 @@ nav {
     text-align: center;
 }
 
+.space-around {
+    justify-content: space-around;
+}
 .banner-border {
     @extend .action;
     background-color: white;
@@ -300,4 +306,14 @@ li>a:visited {
     max-height: 20vw;
     margin: 0.75em;
     max-width: 20vw;
+}
+
+article:after {
+    clear: left;
+}
+
+.event img {
+    max-height: 20vh;
+    max-width: 20vh;
+    padding: 0.5em;
 }
