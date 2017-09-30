@@ -1,5 +1,15 @@
+Vue.component('adoptable-plant', {
+    template: `<div>
+    <img class="thumbnail" v-bind:src="pic" alt="plant available for adoption">
+    <h4>{{name}}</h4><p>{{description}}</p></div>`,
+    props: ['name', 'pic', 'description'],
+})
+
 new Vue({
     el: '#vue-app',
+    components: {
+        name: 'adoptable-plant'
+    },
     data: {
         plants: [{
                 name: "Prayer plant",

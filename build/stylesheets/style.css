@@ -140,6 +140,8 @@ nav {
     max-width: 25vw;
     padding: 1%;
     text-align: center; }
+    .profile div div {
+      box-shadow: none; }
 
 .sponsors {
   background-color: #758F35;

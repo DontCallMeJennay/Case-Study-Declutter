@@ -1,5 +1,8 @@
+var gutil = require('gulp-util');
+
 var gulp = require('gulp'),
-	concat = require('gulp-concat'),
+    babel = require('gulp-babel'),
+    concat = require('gulp-concat'),
     image = require('gulp-imagemin'),
     sass = require('gulp-ruby-sass'),
     ugly = require('gulp-uglify');
@@ -17,10 +20,14 @@ gulp.task('sass', () => {
 });
 
 gulp.task('build-js', () => {
-	return gulp.src('src/scripts/**/*.js')
-		.pipe(concat('main.js'))
-		.pipe(ugly())
-		.pipe(gulp.dest('build/scripts'));
+    return gulp.src('src/scripts/**/*.js')
+        .pipe(concat('main.js'))
+        .pipe(babel({
+            presets: ['env']
+        }))
+        .pipe(ugly())
+        .on('error', function(err) { gutil.log(gutil.colors.red('[Error]'), err.toString()); })
+        .pipe(gulp.dest('build/scripts'));
 });
 
 gulp.watch('src/stylesheets/*', ['sass']);

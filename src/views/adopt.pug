@@ -7,8 +7,5 @@ block adopt
 		h3 Available plants
 
 		div#vue-app.profile
-			template(v-for='plant in plants')
-				div
-					img.thumbnail(v-bind:src='plant.pic' alt="plant available for adoption")
-					h4 {{plant.name}}
-					p {{plant.description}}
+			div(v-for='plant in plants')
+				adoptable-plant.adoptMe(:name='plant.name' :pic='plant.pic' :description='plant.description')

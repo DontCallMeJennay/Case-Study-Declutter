@@ -52,3 +52,5 @@ node_modules/*
 *.psd
 npm-debug.log
 credits.txt
+*.zip
+npm-debug.log.87760870
