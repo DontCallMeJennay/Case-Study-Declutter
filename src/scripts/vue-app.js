@@ -8,7 +8,6 @@ Vue.component('adoptable-plant', {
     props: ['name', 'pic', 'description']
 })
 
-
 Vue.component('event-item', {
     template: `<article class="event">
     <div><img class="responsive" v-bind:src='pic' alt='event ad picture'></div>

@@ -129,11 +129,14 @@ The preceding adjustments resulted in an intermediate content map:
 * Wrote and tested media queries for device responsiveness.
 * Completed first version of full site.
 
+* Converted to dynamic site with Express
+* Converted repeating content (Success Stories, Events, etc.) to Vues
+
 ## Next steps (in no particular order)
-* Convert templates to Vue components
 * SEO evaluation
 * Accessibility evaluation
 * Investigate email list setup: is backend functionality required?
-* Make pseudo-functional system for comparing plants and putting in an adoption request
-* Add Express and write routes for dynamic site
 * Investigate how to deploy on Azure (Docker?)
+* Make pseudo-functional system for comparing plants and putting in an adoption request
+* Consider adding an interface to allow non-tech-savvy people to update the content areas
+* Consider setting up database and authentication system for content management
