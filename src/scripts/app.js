@@ -1,8 +1,11 @@
 Vue.component('adoptable-plant', {
     template: `<div>
     <img class="thumbnail" v-bind:src="pic" alt="plant available for adoption">
-    <h4>{{name}}</h4><p>{{description}}</p></div>`,
-    props: ['name', 'pic', 'description'],
+    <h4>{{name}}</h4>
+    <p>{{description}}</p>
+    <input type='submit' value='I want this one!' class='action' />
+    </div>`,
+    props: ['name', 'pic', 'description']
 })
 
 new Vue({

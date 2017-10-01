@@ -132,16 +132,21 @@ nav {
   margin: 0 auto;
   max-width: 1200px; }
   .profile div {
+    align-items: center;
     background-color: #EFE;
     background: linear-gradient(to bottom, #EFD, #DFC);
     box-shadow: 1px 1px 2px #95AF56;
+    display: flex;
     flex: auto;
+    flex-direction: column;
+    justify-content: space-between;
     margin: 1%;
     max-width: 25vw;
     padding: 1%;
     text-align: center; }
     .profile div div {
-      box-shadow: none; }
+      box-shadow: none;
+      flex: auto; }
 
 .sponsors {
   background-color: #758F35;
@@ -234,6 +239,7 @@ nav {
   border: 2px solid white;
   border-radius: 0.5em;
   color: white;
+  font-family: 'Cherry Swash', 'Sahitya', serif;
   margin: 0.5em;
   padding: 0.5em;
   text-align: center;

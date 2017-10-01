@@ -25,16 +25,21 @@
     margin: 0 auto;
     max-width: 1200px;
     div {
+        align-items: center;
         background-color: #EFE;
         background: linear-gradient(to bottom, #EFD, #DFC);
         box-shadow: 1px 1px 2px $color-primary-2;
+        display: flex;
         flex: auto;
+        flex-direction: column;
+        justify-content: space-between;
         margin: 1%;
         max-width: 25vw;
         padding: 1%;
         text-align: center;
         div {
             box-shadow: none;
+            flex: auto;
         }
     }
 }

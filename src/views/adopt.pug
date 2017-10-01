@@ -5,7 +5,6 @@ block adopt
 		h2 Thank you for considering adoption!
 		hr
 		h3 Available plants
-
 		div#vue-app.profile
 			div(v-for='plant in plants')
-				adoptable-plant.adoptMe(:name='plant.name' :pic='plant.pic' :description='plant.description')
+				adoptable-plant(:name='plant.name' :pic='plant.pic' :description='plant.description')
