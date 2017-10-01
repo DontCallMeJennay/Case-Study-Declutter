@@ -58,11 +58,11 @@ The most confusing part of the page is the sidebar, which contains a mix of cont
 Clarify the most important goal of the site with the client.
 
 Simplify, simplify. 
+* If this site requires frequent updates such as news and events, consider a CMS such as WordPress. (For purposes of this project, we will pretend that this option was rejected due to lack of user confidence and concerns about "being hacked".)
 * Prioritize which items are front-page info and move or discard the rest.
 * Gather data on which donation options are the most utilized, and move or discard the rest.
 * Determine which social media accounts are most effective and/or can be maintained with current resources.
 * Consolidate the merchandise to its own page.
-* If this page is the main outlet for news updates, consider a CMS such as WordPress.
 
 ## Plan of Action
 For purposes of this project I will assume the following priorities:
@@ -101,7 +101,7 @@ The preceding adjustments resulted in an intermediate content map:
 ## Tools and Technologies
 * Pug CLI for templating and generating static HTML files.
 * ~~Debate: Bootstrap 4 for no-worry responsiveness, or~~ hand-coded SCSS for customizability, for now.
-* Vue for ~~repeating components, e.g., adoption profiles.~~ Might as well make the whole thing a Vue.
+* Vue for repeating components, e.g., adoption profiles.
 * jQuery for effects.
 * Facebook plugin
 * ~~Paypal plugin~~
@@ -127,11 +127,10 @@ The preceding adjustments resulted in an intermediate content map:
 * Split up the unwieldy SCSS file into several files.
 * Confirmed photo credits and completed Credits page.
 * Wrote and tested media queries for device responsiveness.
-* Uploaded first complete build.
+* Completed first version of full site.
 
 ## Next steps (in no particular order)
 * Convert templates to Vue components
-* Combine components into SPA
 * SEO evaluation
 * Accessibility evaluation
 * Investigate email list setup: is backend functionality required?
