@@ -7,7 +7,7 @@ body {
   min-height: 100vh; }
 
 a {
-  color: #020;
+  color: #374B05;
   text-decoration: none; }
 
 a:active,
@@ -61,9 +61,6 @@ main {
     margin: 2%;
     margin-bottom: 5%; }
 
-li {
-  list-style: none; }
-
 footer {
   background-color: #374B05;
   border-top: 3px solid #020;
@@ -108,9 +105,13 @@ nav {
     color: #95AF56; }
 
 .event {
-  background-color: #EFDFFF;
-  background: linear-gradient(to bottom, white, #EFDFFF);
-  box-shadow: 1px 1px 2px #585; }
+  background-color: white;
+  background: linear-gradient(to bottom right, #FEF, white, #EFD);
+  box-shadow: 1px 1px 2px #585;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  margin: 1%; }
 
 .jumbotron {
   align-items: center;
@@ -213,7 +214,8 @@ nav {
   margin: 0 auto; }
 
 .fb-page {
-  margin: 0 auto; }
+  margin: 0 auto;
+  min-width: 25vw; }
 
 .float {
   float: left; }

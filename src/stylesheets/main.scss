@@ -7,7 +7,7 @@ body {
 }
 
 a {
-    color: #020;
+    color: $color-primary-4;
     text-decoration: none;
 }
 
@@ -75,10 +75,6 @@ main {
         margin: 2%;
         margin-bottom: 5%;
     }
-}
-
-li {
-    list-style: none;
 }
 
 footer {

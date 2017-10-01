@@ -1,8 +1,7 @@
-var gutil = require('gulp-util');
-
 var gulp = require('gulp'),
     babel = require('gulp-babel'),
     concat = require('gulp-concat'),
+    gutil = require('gulp-util'),
     image = require('gulp-imagemin'),
     sass = require('gulp-ruby-sass'),
     ugly = require('gulp-uglify');
@@ -29,10 +28,30 @@ gulp.task('build-js', () => {
         .on('error', function(err) { gutil.log(gutil.colors.red('[Error]'), err.toString()); })
         .pipe(gulp.dest('build/scripts'));
 });
+gulp.task('build-app', () => {
+    return gulp.src('app.js')
+        .pipe(concat('app.js'))
+        .pipe(babel({
+            presets: ['env']
+        }))
+        .pipe(ugly())
+        .on('error', function(err) { gutil.log(gutil.colors.red('[Error]'), err.toString()); })
+        .pipe(gulp.dest('build/'));
+});
+gulp.task('build-routes', () => {
+    return gulp.src('src/routes/**/*.js')
+        .pipe(concat('index.js'))
+        .pipe(babel({
+            presets: ['env']
+        }))
+        .pipe(ugly())
+        .on('error', function(err) { gutil.log(gutil.colors.red('[Error]'), err.toString()); })
+        .pipe(gulp.dest('build/routes/'));
+});
 
 gulp.watch('src/stylesheets/*', ['sass']);
 gulp.watch('src/images/*', ['imagemin']);
 gulp.watch('src/scripts/**/*', ['build-js'])
 
 
-gulp.task('default', ['sass', 'imagemin', 'build-js']);
+gulp.task('default', ['sass', 'imagemin', 'build-app', 'build-js', 'build-routes']);
