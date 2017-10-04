@@ -5,7 +5,7 @@ var express = require('express'),
 	path = require('path');
 
 var index = require('./build/routes/index');
-const PORT = process.ENV.PORT;
+const PORT = process.env.PORT;
 
 var app = express();
 
