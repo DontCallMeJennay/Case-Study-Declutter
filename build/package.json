@@ -1,0 +1,45 @@
+{
+  "name": "case-study-declutter",
+  "version": "1.0.0",
+  "description": "Website remake",
+  "main": "index.js",
+  "scripts": {
+    "start": "node app.js",
+    "start-dev": "concurrently \"gulp\" \"nodemon app.js -p 7441 --watch\"",
+    "tohtml": "pug src/views -b src/views -o build/views -w",
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DontCallMeJennay/Case-Study-Declutter.git"
+  },
+  "author": "Jenni Corbus",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/DontCallMeJennay/Case-Study-Declutter/issues"
+  },
+  "homepage": "https://github.com/DontCallMeJennay/Case-Study-Declutter#readme",
+  "dependencies": {
+    "body-parser": "~1.17.1",
+    "cookie-parser": "~1.4.3",
+    "debug": "~2.6.3",
+    "express": "~4.15.2",
+    "morgan": "~1.8.1",
+    "pug": "~2.0.0-beta11",
+    "serve-favicon": "^2.4.5"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-preset-env": "^1.6.0",
+    "concurrently": "^3.5.0",
+    "gcloud": "^0.37.2",
+    "gulp": "^3.9.1",
+    "gulp-babel": "^7.0.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-imagemin": "^3.3.0",
+    "gulp-ruby-sass": "^2.1.1",
+    "gulp-uglify": "^3.0.0",
+    "nodemon": "^1.12.1",
+    "pug-cli": "^1.0.0-alpha6"
+  }
+}
