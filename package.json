@@ -4,7 +4,8 @@
   "description": "Website remake",
   "main": "index.js",
   "scripts": {
-    "start": "concurrently \"gulp\" \"nodemon app.js -p 7441 --watch\"",
+    "start": "node app.js",
+    "start-dev": "concurrently \"gulp\" \"nodemon app.js -p 7441 --watch\"",
     "tohtml": "pug src/views -b src/views -o build/views -w",
     "test": "mocha"
   },
