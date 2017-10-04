@@ -1,4 +1,5 @@
 # Case study: Pruning an Overgrown Website
+## [View Demo](https://blooming-shore-64488.herokuapp.com/)
 1. About
 2. Site review
 3. Site inventory
@@ -106,11 +107,11 @@ The preceding adjustments resulted in an intermediate content map:
 * Facebook plugin
 * ~~Paypal plugin~~
 * Plant pics from Flickr, with CC attribution
+* Not sure if database or authentication is required.
 * Issue: the client uses a PHP-based web host with little/no Node support.
   * Learning PHP/Laravel (?) from square one is a bit out of scope for this project. 
   * Static pages and Vue for now; keep the templates for later porting to a dynamic setup.
-  * Update: planning deployment to Azure/Docker with Node/Express.
-* Not sure if database or authentication is required.
+  * Update: ~~planning deployment to Azure/Docker with Node/Express~~ With further research, I've found that services like Azure and GCP operate on an entirely different scale than hobby or small professional projects. Heroku's Hobby or Standard Professional hosting is adequate for this, as would be Firebase, I think.
 
 ## Process
 * Obtained photos from Flickr (Creative Commons licensing) and produced initial graphics and placeholder images in PhotoShop and FireAlpaca
@@ -118,25 +119,32 @@ The preceding adjustments resulted in an intermediate content map:
 * Used Gulp script for building Sass files, minifying JS files, and minimizing images; Pug CLI to build HTML files; and Concurrently to run both watch scripts at once.
 * Built out content pages with Flower Ipsum text, CSS Flexboxes for layout, and previously created images.
 
+
 * Investigated the code made available by the adoption network; built rudimentary Vue page to mimic adoption page. (No functionality yet, obviously.)
 * Investigated vendor buttons and banners. Paypal and Amazon generate their own payment assets for business customers, but I currently have no access to those, so placeholder images were substituted.
 * Continued building content pages and styling as I went. I planned the containers to change from row to column when switching from desktop to mobile.
 * Investigated Facebook plugins, integrated necessary scripts into templates, and reconfigured home page layout to accommodate the plugin.
 * Added a Google Map to the contacts page along with the address and driving directions, because why not.
 
+
 * Split up the unwieldy SCSS file into several files.
 * Confirmed photo credits and completed Credits page.
 * Wrote and tested media queries for device responsiveness.
 * Completed first version of full site.
 
+
 * Converted to dynamic site with Express
 * Converted repeating content (Success Stories, Events, etc.) to Vues
+* Investigated hosting options and deployed to Heroku.
+
+
+[Now with live demo! :D](https://blooming-shore-64488.herokuapp.com/)
+
 
 ## Next steps (in no particular order)
 * SEO evaluation
 * Accessibility evaluation
 * Investigate email list setup: is backend functionality required?
-* Investigate how to deploy on Azure (Docker?)
 * Make pseudo-functional system for comparing plants and putting in an adoption request
 * Consider adding an interface to allow non-tech-savvy people to update the content areas
 * Consider setting up database and authentication system for content management
