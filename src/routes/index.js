@@ -28,8 +28,9 @@ router.get('/merch', function(req, res, next) {
 router.get('/resources', function(req, res, next) {
     res.render('resources', { title: "VHR Houseplant Resources" });
 });
+
 router.get('/resources/:id?', function(req, res, next) {
-    res.render('/articles/resource'+ req.params.id, { title: "Resources" });
+    res.render('articles/resource'+ req.params.id, { title: "Resources" });
 });
 
 

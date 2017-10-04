@@ -11,7 +11,7 @@ var app = express();
 
 // view engine setup
 app.set('view engine', 'pug');
-app.set('views', './src/views');
+app.set('views', './build/views');
 
 app.use(favicon(path.join(__dirname, 'build', 'favicon.ico')));
 app.use(bodyParser.json());
@@ -30,4 +30,3 @@ app.use(function(req, res, next) {
 
 app.listen(7441);
 module.exports = app;
-

@@ -12,7 +12,8 @@ a {
 
 a:active,
 a:hover {
-  color: #758F35; }
+  color: #758F35;
+  text-decoration: none; }
 
 a:visited {
   color: gray; }
@@ -196,8 +197,7 @@ nav {
   max-width: 10vw; }
 
 .responsive {
-  margin: 1em;
-  margin-top: 0.5em;
+  margin: 0 1em;
   max-height: 15%;
   max-height: 15vh;
   max-width: 15%;
