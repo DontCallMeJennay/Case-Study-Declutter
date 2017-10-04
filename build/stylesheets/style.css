@@ -236,6 +236,10 @@ nav {
 .space-around {
   justify-content: space-around; }
 
+.text {
+  margin: 2% auto;
+  max-width: 900px; }
+
 .action, .banner-border {
   background-color: #846799;
   border: 2px solid white;
