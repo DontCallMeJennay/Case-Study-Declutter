@@ -5,7 +5,7 @@ var express = require('express'),
 	path = require('path');
 
 var index = require('./build/routes/index');
-const PORT = 8080;
+const PORT = process.ENV.PORT;
 
 var app = express();
 
@@ -28,5 +28,5 @@ app.use(function(req, res, next) {
   next(err);
 });
 
-app.listen(8080);
+app.listen(PORT);
 module.exports = app;
