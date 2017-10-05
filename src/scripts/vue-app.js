@@ -83,7 +83,7 @@ var EventList = new Vue({
         {
             date: "August 18th, 2017",
             description: `Blue throatwort, Kansas feather round-leaved sundew. Bloom tjenkenrientjee dill red rose. Kangaroo paw sugarbush sea holly ox-eye daisy. Sweet William dorset heath, spider orchid balloon flower. Turtle head false goat’s beard amazon lily sneezeweed.`,
-            name: "It's Summer, Yo",
+            name: "It's summer",
             pic: "/build/images/event.jpg"
         }]
     }

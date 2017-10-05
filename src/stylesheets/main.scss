@@ -39,11 +39,16 @@ body {
 
 h1,
 h2,
-h3,
+h3
+{
+    font-family: 'Cherry Swash', 'Sahitya', serif;
+}
+
 h4,
 h5,
-h6 {
-    font-family: 'Cherry Swash', 'Sahitya', serif;
+h6,
+input[type='submit'] {
+    font-family: 'Courgette', 'Sahitya', sans-serif;
 }
 
 hr {
@@ -113,7 +118,7 @@ nav {
     background-color: #020;
     display: flex;
     flex-flow: row wrap;
-    font-family: 'Cherry Swash', 'Sahitya', serif;
+    font-family: 'Courgette', 'Sahitya', sans-serif;
     font-size: 1.25rem;
     justify-content: space-around;
     a {
