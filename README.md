@@ -120,7 +120,7 @@ The preceding adjustments resulted in an intermediate content map:
 * Built out content pages with Flower Ipsum text, CSS Flexboxes for layout, and previously created images.
 
 
-* Investigated the code made available by the adoption network; built rudimentary Vue page to mimic adoption page. (No functionality yet, obviously.)
+* Researched the code assets made available by the adoption network; built rudimentary Vue page to mimic adoption page.
 * Investigated vendor buttons and banners. Paypal and Amazon generate their own payment assets for business customers, but I currently have no access to those, so placeholder images were substituted.
 * Continued building content pages and styling as I went. I planned the containers to change from row to column when switching from desktop to mobile.
 * Investigated Facebook plugins, integrated necessary scripts into templates, and reconfigured home page layout to accommodate the plugin.
@@ -137,14 +137,15 @@ The preceding adjustments resulted in an intermediate content map:
 * Converted repeating content (Success Stories, Events, etc.) to Vues
 * Investigated hosting options and deployed to Heroku.
 
-
 [Now with live demo! :D](https://blooming-shore-64488.herokuapp.com/)
+
+* Reviewed accessibility and corrected ARIA issues. (The Facebook plugin breaks keyboard navigation; is it still necessary?)
 
 
 ## Next steps (in no particular order)
 * SEO evaluation
-* Accessibility evaluation
 * Investigate email list setup: is backend functionality required?
 * Make pseudo-functional system for comparing plants and putting in an adoption request
 * Consider adding an interface to allow non-tech-savvy people to update the content areas
 * Consider setting up database and authentication system for content management
+* Clear GitHub issue list
