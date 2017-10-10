@@ -5,11 +5,11 @@ block volunteer
 		h2 How to get involved
 		ul
 			li
-				a(href='#events') Upcoming events
+				a(href='#current') Upcoming events
 			li
 				a(href='#garden') Ongoing opportunities
 		hr
-		h3#events Events
+		h3#current Events
 		div.indent#event-list
 			div(v-for='item in events')
 				event-item(:name='item.name' :date='item.date' :pic='item.pic' :description='item.description')
