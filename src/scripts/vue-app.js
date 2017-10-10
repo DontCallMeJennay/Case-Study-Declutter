@@ -16,6 +16,21 @@ Vue.component('event-item', {
     props: ['name', 'date', 'pic', 'description']
 })
 
+Vue.component('story-item', {
+    template: `<article class='success'>
+            <h3> {{ title }} </h3>
+            <p> {{ date }} </p>
+            <div>
+                <img class="trim float" :src='pic' alt='happy plant pic' />
+            </div>
+            <div>
+                <p> {{ info }} </p>
+                <p>-- {{ author }} </p>
+            </div>
+            </article>`,
+    props: ['title', 'date', 'pic', 'info', 'author']
+})
+
 var AdoptionList = new Vue({
     el: '#vue-app',
     components: {
@@ -87,21 +102,6 @@ var EventList = new Vue({
             pic: "/build/images/event.jpg"
         }]
     }
-})
-
-Vue.component('story-item', {
-    template: `<article class='success'>
-            <h3> {{ title }} </h3>
-            <p> {{ date }} </p>
-            <div>
-                <img class="trim float" :src='pic' alt='happy plant pic' />
-            </div>
-            <div>
-                <p> {{ info }} </p>
-                <p>-- {{ author }} </p>
-            </div>
-            </article>`,
-    props: ['title', 'date', 'pic', 'info', 'author']
 })
 
 var SuccessStories = new Vue({
