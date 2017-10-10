@@ -1,8 +1,0 @@
-extends layout
-
-block success
-	div.indent
-		h2 Success Stories
-		div#story-list
-			div(v-for='story in stories')
-				story-item(:author='story.author' :title='story.title' :info='story.info' :date='story.date' :pic='story.pic')
