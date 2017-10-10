@@ -1,6 +1,6 @@
 Vue.component('adoptable-plant', {
     template: `<div>
-    <img class="thumbnail" v-bind:src="pic" alt="picture of plant available for adoption">
+    <img class="thumbnail" v-bind:src="pic" v-bind:alt='"pic of " + name'>
     <h4>{{name}}</h4>
     <p>{{description}}</p>
     <input type='submit' value='I want this one!' class='action' />
@@ -10,7 +10,7 @@ Vue.component('adoptable-plant', {
 
 Vue.component('event-item', {
     template: `<article class="event">
-    <div><img class="responsive" v-bind:src='pic' v-bind:alt='name'></div>
+    <div><img class="responsive" v-bind:src='pic' alt='event picture'></div>
     <div><h4> {{ name }}! </h4><p class="date">{{ date }}</p>
     <p>{{ description}} </p></div></article>`,
     props: ['name', 'date', 'pic', 'description']
