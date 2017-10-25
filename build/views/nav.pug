@@ -1,5 +1,6 @@
-nav
-	ul
+nav(data-role="collapsible" data-collapsed="false")
+	i.hide-lg.fa.fa-2x.fa-bars#menu-btn(aria-hidden="true")
+	ul(data-role="listview").hide-sm#menu
 		li
 			a(href='/') Home
 		li
@@ -16,9 +17,3 @@ nav
 			a(href='/merch') VHR Gear
 		li
 			a(href='/contact') Contact
-		li
-			a(href='#' aria-label='Facebook link')
-				i(class='fa fa-facebook' aria-hidden='true') 
-		li
-			a(href='#' aria-label='Instagram link')
-				i(class='fa fa-instagram' aria-hidden='true') 

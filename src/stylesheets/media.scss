@@ -1,6 +1,39 @@
 @media screen and (max-width: 800px) {
+
+    .hide-lg {
+        color: $color-primary-2;
+        display: block !important;
+        margin: 5px 0.5em;
+    }
+    .hide-sm {
+        background-color: #020;
+        display: none;
+        font-family: 'Sahitya', serif;
+        li {
+            border-bottom: 1px solid $color-primary-2;
+            font-size: 1.25em;
+            flex: auto;
+        }
+        li:nth-child(odd) {
+            background-color: #050;
+            background: linear-gradient(to right, #020, #050 5%, #020);
+        }
+    }
+    .event {
+        flex-direction: column-reverse;
+        margin-bottom: 20px;
+        h4 {
+            padding: 1em;
+            margin: 0;
+        }
+        img {
+            display: none;
+        }
+    }
+
     h1 {
         font-size: 2em;
+        margin: 0;
     }
     h2 {
         font-size: 1.8em;
@@ -11,9 +44,11 @@
     h4 {
         font-size: 1.4em;
     }
-    nav a {
-        padding: 0 1em;
+
+    ul {
+        margin: 0;
     }
+
     .flex-wrapper {
         flex-flow: column;
         .triplet {
@@ -63,7 +98,7 @@
     }
 
     #map {
-    	height: 75vw;
-    	width: 75vw;
+        height: 75vw;
+        width: 75vw;
     }
 }

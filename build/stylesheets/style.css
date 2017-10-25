@@ -3,7 +3,7 @@
 html,
 body {
   color: #333;
-  font-family: 'Sahitya', sans-serif;
+  font-family: 'Sahitya', serif;
   font-size: 1.1rem;
   min-height: 100vh; }
 
@@ -28,7 +28,8 @@ article:after {
 body {
   display: flex;
   flex-direction: column;
-  height: 100%; }
+  height: 100%;
+  margin: 0; }
 
 h1,
 h2,
@@ -55,6 +56,8 @@ header {
     align-items: center; }
   header i {
     margin: 0 1em; }
+  header a:visited {
+    color: #374B05; }
 
 main {
   display: flex;
@@ -93,12 +96,15 @@ nav {
   background-color: #020;
   font-family: 'Courgette', 'Sahitya', sans-serif;
   display: flex;
+  flex-flow: row;
   justify-content: space-around; }
   nav ul {
     list-style: none;
     display: flex;
     flex-flow: row wrap;
-    justify-content: space-around; }
+    justify-content: space-between;
+    padding: 0.5em;
+    width: 96%; }
   nav a {
     font-size: 1.25rem;
     color: white;
@@ -111,6 +117,9 @@ nav {
     text-decoration: none; }
   nav a:visited {
     color: #95AF56; }
+
+.hide-lg {
+  display: none !important; }
 
 .event {
   background-color: white;
@@ -167,6 +176,10 @@ nav {
   width: 100%; }
   .sponsors a {
     margin: 0 10px; }
+  .sponsors img {
+    margin: 10px;
+    max-height: 15vh;
+    max-width: 15vw; }
 
 .triplet, .success {
   background-color: #FEF;
@@ -203,7 +216,7 @@ nav {
   max-width: 10vw; }
 
 .responsive {
-  margin: auto;
+  margin: 1em;
   max-height: 20vh;
   max-width: 20vw; }
 
@@ -305,8 +318,35 @@ nav {
   width: 30vw; }
 
 @media screen and (max-width: 800px) {
+  .hide-lg {
+    color: #95AF56;
+    display: block !important;
+    margin: 5px 0.5em; }
+
+  .hide-sm {
+    background-color: #020;
+    display: none;
+    font-family: 'Sahitya', serif; }
+    .hide-sm li {
+      border-bottom: 1px solid #95AF56;
+      font-size: 1.25em;
+      flex: auto; }
+    .hide-sm li:nth-child(odd) {
+      background-color: #050;
+      background: linear-gradient(to right, #020, #050 5%, #020); }
+
+  .event {
+    flex-direction: column-reverse;
+    margin-bottom: 20px; }
+    .event h4 {
+      padding: 1em;
+      margin: 0; }
+    .event img {
+      display: none; }
+
   h1 {
-    font-size: 2em; }
+    font-size: 2em;
+    margin: 0; }
 
   h2 {
     font-size: 1.8em; }
@@ -317,8 +357,8 @@ nav {
   h4 {
     font-size: 1.4em; }
 
-  nav a {
-    padding: 0 1em; }
+  ul {
+    margin: 0; }
 
   .flex-wrapper {
     flex-flow: column; }

@@ -4,6 +4,7 @@ block index
 	div.jumbotron
 		h2 Welcome!
 	div.indent.flex-wrapper 
+		h3 Current Events
 		div#event-list
 			template(v-for='item in events')
 				event-item(:name='item.name' :date='item.date' :pic='item.pic' :description='item.description')
