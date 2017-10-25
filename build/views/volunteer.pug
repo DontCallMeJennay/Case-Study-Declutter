@@ -11,7 +11,7 @@ block volunteer
 		hr
 		h3#current Events
 		div.indent#event-list
-			div(v-for='item in events')
+			template(v-for='item in events')
 				event-item(:name='item.name' :date='item.date' :pic='item.pic' :description='item.description')
 			hr
 			h3#garden Ongoing opportunities

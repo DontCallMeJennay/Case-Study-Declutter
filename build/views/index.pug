@@ -1,21 +1,9 @@
 extends layout
 
 block index
-	script.
-		(function(d, s, id) {
-		    var js, fjs = d.getElementsByTagName(s)[0];
-		    if (d.getElementById(id)) return;
-		    js = d.createElement(s);
-		    js.id = id;
-		    js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.10";
-		    fjs.parentNode.insertBefore(js, fjs);
-		}(document, 'script', 'facebook-jssdk'));
 	div.jumbotron
 		h2 Welcome!
 	div.indent.flex-wrapper 
 		div#event-list
-			div(v-for='item in events')
+			template(v-for='item in events')
 				event-item(:name='item.name' :date='item.date' :pic='item.pic' :description='item.description')
-		div.center-el.fb
-			div.fb-page(data-href="https://www.facebook.com/molbaks" data-tabs="timeline" data-small-header="true" data-width='500' data-height="300" data-adapt-container-width="true" data-hide-cover="true" data-show-facepile="false")
-			p.small.center (For demonstration purposes only. Molbak's is not involved with this site.)

@@ -9,5 +9,5 @@ block adopt
 		hr
 		h3 Available plants
 		div#vue-app.profile
-			div(v-for='plant in plants')
+			template(v-for='plant in plants')
 				adoptable-plant(:name='plant.name' :pic='plant.pic' :description='plant.description')
