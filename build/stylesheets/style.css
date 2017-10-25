@@ -118,9 +118,6 @@ nav {
   nav a:visited {
     color: #95AF56; }
 
-.hide-lg {
-  display: none !important; }
-
 .event {
   background-color: white;
   background: linear-gradient(to bottom right, #FEF, white, #EFD);
@@ -131,17 +128,21 @@ nav {
   margin: 2%; }
 
 .jumbotron {
-  align-items: center;
   background: url("../images/collage1.jpg");
   background-size: auto 100%;
   color: white;
   display: flex;
   flex-direction: row;
   font-size: 1.2rem;
-  justify-content: space-around;
+  justify-content: center;
   min-height: 40vh;
   text-align: left;
   width: 100%; }
+  .jumbotron h1 {
+    text-align: center; }
+  .jumbotron div {
+    margin: 3%;
+    min-width: 30%; }
 
 .profile {
   display: flex;
@@ -266,6 +267,7 @@ nav {
   border: 2px solid white;
   border-radius: 0.5em;
   color: white;
+  cursor: pointer;
   font-family: 'Cherry Swash', 'Sahitya', serif;
   margin: 0.5em;
   padding: 0.5em;
@@ -317,6 +319,9 @@ nav {
   margin: 2%;
   width: 30vw; }
 
+.hide-lg {
+  display: none !important; }
+
 @media screen and (max-width: 800px) {
   .hide-lg {
     color: #95AF56;
@@ -334,6 +339,10 @@ nav {
     .hide-sm li:nth-child(odd) {
       background-color: #050;
       background: linear-gradient(to right, #020, #050 5%, #020); }
+
+  .jumbotron {
+    flex-direction: column;
+    justify-content: flex-start; }
 
   .event {
     flex-direction: column-reverse;
@@ -355,7 +364,8 @@ nav {
     font-size: 1.6em; }
 
   h4 {
-    font-size: 1.4em; }
+    font-size: 1.4em;
+    margin: 0; }
 
   ul {
     margin: 0; }

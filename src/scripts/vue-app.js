@@ -3,7 +3,7 @@ Vue.component('adoptable-plant', {
     <img class="thumbnail" v-bind:src="pic" v-bind:alt='"pic of " + name'>
     <h4>{{name}}</h4>
     <p>{{description}}</p>
-    <input type='submit' value='I want this one!' class='action' />
+    <a href="#pickMe" class='action' onclick="console.log('button clicked')">I want this one! </a>
     </div>`,
     props: ['name', 'pic', 'description']
 })

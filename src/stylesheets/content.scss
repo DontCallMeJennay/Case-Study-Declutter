@@ -9,17 +9,23 @@
 }
 
 .jumbotron {
-    align-items: center;
     background: url('../images/collage1.jpg');
     background-size: auto 100%;
     color: white;
     display: flex;
     flex-direction: row;
     font-size: 1.2rem;
-    justify-content: space-around;
+    justify-content: center;
     min-height: 40vh;
     text-align: left;
     width: 100%;
+    h1 {
+        text-align: center;
+    }
+    div {
+        margin: 3%;
+        min-width: 30%;
+    }
 }
 
 .profile {

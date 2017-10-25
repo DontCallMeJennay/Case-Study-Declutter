@@ -3,6 +3,7 @@ extends layout
 block adopt
 	script(src="https://unpkg.com/vue")
 	// script(src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.4.4/vue.min.js")
+	link(rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css")
 	
 	div.indent
 		h2 Thank you for considering adoption!
@@ -11,3 +12,16 @@ block adopt
 		div#vue-app.profile
 			template(v-for='plant in plants')
 				adoptable-plant(:name='plant.name' :pic='plant.pic' :description='plant.description')
+
+	//This needs to be a component --v
+
+	div#pickMe.modal
+		p Ready to adopt? Let us know!
+		form
+			label(for="adopt_name") Your name
+			input#adopt_name
+			label(for="adopt_phone") Phone number
+			input#adopt_phone
+			label(for="adopt_email") Email address
+			input#adopt_email
+			input(type='submit' value="Send info")

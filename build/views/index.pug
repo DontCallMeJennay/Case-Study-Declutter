@@ -2,9 +2,12 @@ extends layout
 
 block index
 	div.jumbotron
-		h2 Welcome!
+		div
+			h2 Welcome!
+		div
+			h4 Catchphrase or really important information
+			p Florem ipsum flowering cherry cornflower royal bluebell ox-eye daisy. September flower pink heath gorse brodiaea globe artichoke christmas rose tansy. Cowslip spring kangaroo paw. Spiked speedwell spring cinquefoil, orchid. Sweet pea amazon lily columbine bilberry poppy jacob's ladder. Sweet William prairie gentian queen Fabiola lily. Michaelmas daisy.
 	div.indent.flex-wrapper 
-		h3 Current Events
 		div#event-list
 			template(v-for='item in events')
 				event-item(:name='item.name' :date='item.date' :pic='item.pic' :description='item.description')

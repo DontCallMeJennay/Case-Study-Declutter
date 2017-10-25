@@ -1,3 +1,7 @@
+.hide-lg {
+    display: none !important;
+}
+
 @media screen and (max-width: 800px) {
 
     .hide-lg {
@@ -18,6 +22,10 @@
             background-color: #050;
             background: linear-gradient(to right, #020, #050 5%, #020);
         }
+    }
+    .jumbotron {
+        flex-direction: column;
+        justify-content: flex-start;
     }
     .event {
         flex-direction: column-reverse;
@@ -43,6 +51,7 @@
     }
     h4 {
         font-size: 1.4em;
+        margin: 0;
     }
 
     ul {
