@@ -39,8 +39,7 @@ body {
 
 h1,
 h2,
-h3
-{
+h3 {
     font-family: 'Cherry Swash', 'Sahitya', serif;
 }
 
@@ -115,12 +114,17 @@ footer {
 
 nav {
     background-color: #020;
-    display: flex;
-    flex-flow: row wrap;
     font-family: 'Courgette', 'Sahitya', sans-serif;
-    font-size: 1.25rem;
+    display: flex;
     justify-content: space-around;
+    ul {
+        list-style: none;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-around;
+    }
     a {
+        font-size: 1.25rem;
         color: white;
         padding: 0.5em;
     }
