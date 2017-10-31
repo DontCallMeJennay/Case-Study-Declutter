@@ -1,5 +1,5 @@
 # Case study: Pruning an Overgrown Website
-*Update 10/31: Site may be unavailable due to Heroku outage
+*Update 10/31: Site may be unavailable due to Heroku outage*
 ## [View new site](https://blooming-shore-64488.herokuapp.com/)
 ## [Before-and-after content diagram](/blueprints/comparison.png)
 1. About
