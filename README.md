@@ -1,5 +1,8 @@
 # Case study: Pruning an Overgrown Website
 ## [View Demo](https://blooming-shore-64488.herokuapp.com/)
+## [Before diagram](/blueprints/before-box-chart.png)
+## [After diagram (desktop)](/blueprints/after-desktop.png)
+## [After diagram (mobile)](/blueprints/after-mobile.png)
 1. About
 2. Site review
 3. Site inventory
@@ -9,6 +12,7 @@
 7. Tools and technologies
 8. Process
 9. Next steps
+10. Conclusion
 
 ## About this project
 
@@ -104,7 +108,7 @@ The preceding adjustments resulted in an intermediate content map:
 * ~~Debate: Bootstrap 4 for no-worry responsiveness, or~~ hand-coded SCSS for customizability, for now.
 * Vue for repeating components, e.g., adoption profiles.
 * jQuery for effects.
-* Facebook plugin
+* ~~Facebook plugin~~
 * ~~Paypal plugin~~
 * Plant pics from Flickr, with CC attribution
 * Not sure if database or authentication is required.
@@ -119,33 +123,28 @@ The preceding adjustments resulted in an intermediate content map:
 * Used Gulp script for building Sass files, minifying JS files, and minimizing images; Pug CLI to build HTML files; and Concurrently to run both watch scripts at once.
 * Built out content pages with Flower Ipsum text, CSS Flexboxes for layout, and previously created images.
 
-
 * Researched the code assets made available by the adoption network; built rudimentary Vue page to mimic adoption page.
 * Investigated vendor buttons and banners. Paypal and Amazon generate their own payment assets for business customers, but I currently have no access to those, so placeholder images were substituted.
 * Continued building content pages and styling as I went. I planned the containers to change from row to column when switching from desktop to mobile.
 * Investigated Facebook plugins, integrated necessary scripts into templates, and reconfigured home page layout to accommodate the plugin.
 * Added a Google Map to the contacts page along with the address and driving directions, because why not.
 
-
 * Split up the unwieldy SCSS file into several files.
 * Confirmed photo credits and completed Credits page.
 * Wrote and tested media queries for device responsiveness.
 * Completed first version of full site.
 
-
 * Converted to dynamic site with Express
-* Converted repeating content (Success Stories, Events, etc.) to Vues
+* Converted repeating content (Success Stories, Events, etc.) to Vue components
 * Investigated hosting options and deployed to Heroku.
 
 [Now with live demo! :D](https://blooming-shore-64488.herokuapp.com/)
 
-* Reviewed accessibility and corrected ARIA issues. (The Facebook plugin breaks keyboard navigation; is it still necessary?)
+* Reviewed accessibility and corrected ARIA issues.
+* Removed Facebook plugin--it was a tab trap and it didn't fit well--and added news items to front page
+* 
 
+## Conclusion
 
 ## Next steps (in no particular order)
-* SEO evaluation
-* Investigate email list setup: is backend functionality required?
-* Make pseudo-functional system for comparing plants and putting in an adoption request
-* Consider adding an interface to allow non-tech-savvy people to update the content areas
-* Consider setting up database and authentication system for content management
-* Clear GitHub issue list
+* Clear GitHub issue list (mostly cosmetic issues)
