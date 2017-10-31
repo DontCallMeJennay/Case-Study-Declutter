@@ -231,10 +231,6 @@ nav {
 .center-el {
   margin: 0 auto; }
 
-.fb-page {
-  margin: 0 auto;
-  min-width: 25vw; }
-
 .float {
   float: left; }
 
@@ -250,6 +246,10 @@ nav {
 
 .noindent {
   padding-left: 0; }
+
+.no-gap {
+  margin-bottom: 0;
+  margin-left: 2%; }
 
 .space-around {
   justify-content: space-around; }

@@ -1,4 +1,0 @@
-# [START runtime]
-runtime: nodejs
-env: prod
-# [END runtime]
