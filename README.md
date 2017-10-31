@@ -1,18 +1,15 @@
 # Case study: Pruning an Overgrown Website
-## [View Demo](https://blooming-shore-64488.herokuapp.com/)
-## [Before diagram](/blueprints/before-box-chart.png)
-## [After diagram (desktop)](/blueprints/after-desktop.png)
-## [After diagram (mobile)](/blueprints/after-mobile.png)
+*Update 10/31: Site may be unavailable due to Heroku outage
+## [View new site](https://blooming-shore-64488.herokuapp.com/)
+## [Before-and-after content diagram](/blueprints/comparison.png)
 1. About
 2. Site review
-3. Site inventory
-4. Analysis
-5. Recommendations
-6. Plan of action
-7. Tools and technologies
-8. Process
-9. Next steps
-10. Conclusion
+3. Analysis
+4. Recommendations
+5. Plan of action
+6. Tools and technologies
+7. Process
+8. Results
 
 ## About this project
 
@@ -63,7 +60,7 @@ The most confusing part of the page is the sidebar, which contains a mix of cont
 Clarify the most important goal of the site with the client.
 
 Simplify, simplify. 
-* If this site requires frequent updates such as news and events, consider a CMS such as WordPress. (For purposes of this project, we will pretend that this option was rejected due to lack of user confidence and concerns about "being hacked".)
+* If this site requires frequent updates such as news and events, consider using WordPress. (For purposes of this project, we will pretend that this option was rejected due to lack of user confidence and concerns about "being hacked".)
 * Prioritize which items are front-page info and move or discard the rest.
 * Gather data on which donation options are the most utilized, and move or discard the rest.
 * Determine which social media accounts are most effective and/or can be maintained with current resources.
@@ -105,46 +102,38 @@ The preceding adjustments resulted in an intermediate content map:
 
 ## Tools and Technologies
 * Pug CLI for templating and generating static HTML files.
-* ~~Debate: Bootstrap 4 for no-worry responsiveness, or~~ hand-coded SCSS for customizability, for now.
 * Vue for repeating components, e.g., adoption profiles.
-* jQuery for effects.
-* ~~Facebook plugin~~
-* ~~Paypal plugin~~
+* SCSS and jQuery for styling and effects.
 * Plant pics from Flickr, with CC attribution
-* Not sure if database or authentication is required.
-* Issue: the client uses a PHP-based web host with little/no Node support.
-  * Learning PHP/Laravel (?) from square one is a bit out of scope for this project. 
-  * Static pages and Vue for now; keep the templates for later porting to a dynamic setup.
-  * Update: ~~planning deployment to Azure/Docker with Node/Express~~ With further research, I've found that services like Azure and GCP operate on an entirely different scale than hobby or small professional projects. Heroku's Hobby or Standard Professional hosting is adequate for this, as would be Firebase, I think.
+* Back-end: Express and various middleware deployed on Heroku
+* Vendor banners and plugins as needed
+* Gulp, Nodemon, and various packages for building and auto-reloading
 
 ## Process
 * Obtained photos from Flickr (Creative Commons licensing) and produced initial graphics and placeholder images in PhotoShop and FireAlpaca
 * Constructed a Pug layout file. Created separate templates for header, footer, index, donations, etc. to Lego together full pages. 
 * Used Gulp script for building Sass files, minifying JS files, and minimizing images; Pug CLI to build HTML files; and Concurrently to run both watch scripts at once.
 * Built out content pages with Flower Ipsum text, CSS Flexboxes for layout, and previously created images.
-
-* Researched the code assets made available by the adoption network; built rudimentary Vue page to mimic adoption page.
+* Researched the code snippets made available by the adoption network; built rudimentary Vue page to mimic adoption page.
 * Investigated vendor buttons and banners. Paypal and Amazon generate their own payment assets for business customers, but I currently have no access to those, so placeholder images were substituted.
 * Continued building content pages and styling as I went. I planned the containers to change from row to column when switching from desktop to mobile.
 * Investigated Facebook plugins, integrated necessary scripts into templates, and reconfigured home page layout to accommodate the plugin.
 * Added a Google Map to the contacts page along with the address and driving directions, because why not.
-
 * Split up the unwieldy SCSS file into several files.
 * Confirmed photo credits and completed Credits page.
 * Wrote and tested media queries for device responsiveness.
 * Completed first version of full site.
-
 * Converted to dynamic site with Express
 * Converted repeating content (Success Stories, Events, etc.) to Vue components
 * Investigated hosting options and deployed to Heroku.
-
-[Now with live demo! :D](https://blooming-shore-64488.herokuapp.com/)
-
 * Reviewed accessibility and corrected ARIA issues.
-* Removed Facebook plugin--it was a tab trap and it didn't fit well--and added news items to front page
-* 
+* Removed Facebook plugin and added news items to front page
+* Changed mobile navbar to dropdown menu
 
-## Conclusion
+## Results
+### [View new site](https://blooming-shore-64488.herokuapp.com/)
+### [Before-and-after content diagram](/blueprints/comparison.png)
 
-## Next steps (in no particular order)
-* Clear GitHub issue list (mostly cosmetic issues)
+## To finish
+* Finish modals on adoption page
+* Clear GitHub issue list (mostly cosmetic)
